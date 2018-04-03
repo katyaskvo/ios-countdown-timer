@@ -14,6 +14,7 @@
 		0030E4F7206D6FBF00921B09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0030E4F5206D6FBF00921B09 /* LaunchScreen.storyboard */; };
 		0030E502206D6FBF00921B09 /* timerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0030E501206D6FBF00921B09 /* timerTests.swift */; };
 		0030E50D206D6FBF00921B09 /* timerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0030E50C206D6FBF00921B09 /* timerUITests.swift */; };
+		00A39FA320741D270065A9B8 /* CountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A39FA220741D270065A9B8 /* CountDownViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0030E508206D6FBF00921B09 /* timerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = timerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0030E50C206D6FBF00921B09 /* timerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerUITests.swift; sourceTree = "<group>"; };
 		0030E50E206D6FBF00921B09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00A39FA220741D270065A9B8 /* CountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				0030E4F3206D6FBF00921B09 /* Assets.xcassets */,
 				0030E4F5206D6FBF00921B09 /* LaunchScreen.storyboard */,
 				0030E4F8206D6FBF00921B09 /* Info.plist */,
+				00A39FA220741D270065A9B8 /* CountDownViewController.swift */,
 			);
 			path = timer;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A39FA320741D270065A9B8 /* CountDownViewController.swift in Sources */,
 				0030E4EF206D6FBF00921B09 /* TimerViewController.swift in Sources */,
 				0030E4ED206D6FBF00921B09 /* AppDelegate.swift in Sources */,
 			);

@@ -14,26 +14,18 @@ class TimerViewController: UIViewController {
     var timer = Timer()
     var isTimerRunning = false //This will be used to make sure only one timer is created at a time.
     
-    
-    @IBAction func startButtonTapped(_ sender: UIButton) {
-        runTimer()
+  @IBAction func munute1tapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "CountDownBegins", sender: self)
     }
-    func runTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(TimerViewController.updateTimer)), userInfo: nil, repeats: true)
-    }
-    @objc func updateTimer() {
-        seconds -= 1     //This will decrement(count down)the seconds.
-        timerLabel.text = "\(seconds)" //This will update the label.
-    }
-    @IBAction func pauseButtonTapped(_ sender: UIButton) {
-    }
-    @IBAction func resetButtonTapped(_ sender: UIButton) {
-    }
-    
-    override func viewDidLoad() {
+   override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destVC : CountDownViewController = segue.destination as! CountDownViewController
+        destVC.runTimer()
+        destVC.numberOfSeconds = 10
+    }
 }
 
