@@ -52,6 +52,19 @@ class TimerViewController: UIViewController {
             destVC.runTimer()
         }
 
+        // 6 mins
+        if (segue.identifier == "timer6mins") {
+            let destVC : CountDownViewController = segue.destination as! CountDownViewController
+            destVC.numberOfSeconds = 360
+            destVC.runTimer()
+        }
+        
+        // 7 mins
+        if (segue.identifier == "timer7mins") {
+            let destVC : CountDownViewController = segue.destination as! CountDownViewController
+            destVC.numberOfSeconds = 420
+            destVC.runTimer()
+        }
     }
 }
 
