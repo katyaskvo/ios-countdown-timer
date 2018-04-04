@@ -110,11 +110,17 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" identifier="stopTimer" id="Ybt-gd-h9y"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fnP-Mq-3Hj" customClass="CircleProgressBar">
+                                <rect key="frame" x="87" y="420" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.94117647058823528" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="jPt-aT-zXD"/>
                     </view>
                     <connections>
+                        <outlet property="circleProgressBar" destination="fnP-Mq-3Hj" id="d7E-kR-iNs"/>
                         <outlet property="displayTime" destination="cX8-fX-6UK" id="w7N-Jv-AWF"/>
                     </connections>
                 </viewController>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CircleProgressBar
 
 class CountDownViewController: UIViewController {
     var timer = Timer()
@@ -14,15 +15,21 @@ class CountDownViewController: UIViewController {
     
     var numberOfSeconds :Int = 0
     @IBOutlet var displayTime: UILabel!
+//    @IBOutlet weak var circleProgressBar: CircleProgressBar!
+    @IBOutlet weak var circleProgressBar: CircleProgressBar!
+    
     
     @IBAction func stopTimer(_ sender: Any) {
         timer.invalidate()
     }
     func runTimer() {
+//        circleProgressBar.setProgress(CGFloat, animated: Bool, duration: 10)
         timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(CountDownViewController.updateTimer)), userInfo: nil, repeats: true)
         isTimerRunning = true
     }
     @objc func updateTimer() {
+        func updateProgress(_ progress: CGFloat, animated: Bool = true, initialDelay: CFTimeInterval = 0, duration: CFTimeInterval? = 10) {}
+        
         if numberOfSeconds < 1 {
             timer.invalidate()
             //Send alert to indicate "time's up!"
@@ -43,9 +50,13 @@ class CountDownViewController: UIViewController {
     override func viewDidLoad() {
         print("view did load")
         super.viewDidLoad()
+        circleProgressBar.setProgress(1.0, animated: true, duration: 60.0)
+
         displayTime.text = timeString(time: TimeInterval(numberOfSeconds))
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    
     
 }
 
