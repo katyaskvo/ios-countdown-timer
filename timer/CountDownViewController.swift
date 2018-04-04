@@ -15,6 +15,9 @@ class CountDownViewController: UIViewController {
     var numberOfSeconds :Int = 0
     @IBOutlet var displayTime: UILabel!
     
+    @IBAction func stopTimer(_ sender: Any) {
+        timer.invalidate()
+    }
     func runTimer() {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(CountDownViewController.updateTimer)), userInfo: nil, repeats: true)
         isTimerRunning = true
