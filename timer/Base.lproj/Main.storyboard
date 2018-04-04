@@ -32,6 +32,7 @@
                                 <state key="normal" image="1 min"/>
                                 <connections>
                                     <action selector="munute1tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r2u-8G-Jfc"/>
+                                    <segue destination="2cq-mP-vgg" kind="presentation" identifier="timer1min" id="C7Q-Ah-y24"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -39,7 +40,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="timerLabel" destination="cX8-fX-6UK" id="isb-7a-l0N"/>
                         <segue destination="2cq-mP-vgg" kind="presentation" identifier="CountDownBegins" id="2HR-pS-fdu"/>
                     </connections>
                 </viewController>
@@ -67,7 +67,7 @@
                         <viewLayoutGuide key="safeArea" id="jPt-aT-zXD"/>
                     </view>
                     <connections>
-                        <outlet property="displayTime" destination="cX8-fX-6UK" id="w1w-vg-4hc"/>
+                        <outlet property="displayTime" destination="cX8-fX-6UK" id="w7N-Jv-AWF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CDC-3O-BZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -78,4 +78,7 @@
     <resources>
         <image name="1 min" width="60" height="60"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="C7Q-Ah-y24"/>
+    </inferredMetricsTieBreakers>
 </document>
