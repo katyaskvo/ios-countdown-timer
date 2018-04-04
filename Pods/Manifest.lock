@@ -1,0 +1,12 @@
+PODS:
+  - RPCircularProgress (0.3.1)
+
+DEPENDENCIES:
+  - RPCircularProgress
+
+SPEC CHECKSUMS:
+  RPCircularProgress: 33ac3550d0fc3c4d368701e804bb4b2bbe5e86f3
+
+PODFILE CHECKSUM: 88c1cca41efad817afa051371e7f61e71f50a72d
+
+COCOAPODS: 1.4.0
