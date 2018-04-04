@@ -16,6 +16,9 @@ class TimerViewController: UIViewController {
     @IBAction func minutes2tapped(_ sender: Any) {
         performSegue(withIdentifier: "timer2mins", sender: self)
     }
+    @IBAction func minutes3tapped(_ sender: Any) {
+        performSegue(withIdentifier: "timer3mins", sender: self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -34,6 +37,13 @@ class TimerViewController: UIViewController {
         if (segue.identifier == "timer2mins") {
             let destVC : CountDownViewController = segue.destination as! CountDownViewController
             destVC.numberOfSeconds = 120
+            destVC.runTimer()
+        }
+        
+        // 3 mins
+        if (segue.identifier == "timer3mins") {
+            let destVC : CountDownViewController = segue.destination as! CountDownViewController
+            destVC.numberOfSeconds = 180
             destVC.runTimer()
         }
 
