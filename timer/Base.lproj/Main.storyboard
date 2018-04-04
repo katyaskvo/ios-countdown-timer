@@ -31,7 +31,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="1 min"/>
                                 <connections>
-                                    <action selector="munute1tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r2u-8G-Jfc"/>
                                     <segue destination="2cq-mP-vgg" kind="presentation" identifier="timer1min" id="C7Q-Ah-y24"/>
                                 </connections>
                             </button>
@@ -40,7 +39,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="2 min"/>
                                 <connections>
-                                    <action selector="minutes2tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1su-np-95V"/>
                                     <segue destination="2cq-mP-vgg" kind="presentation" identifier="timer2mins" id="zjY-Ib-Huw"/>
                                 </connections>
                             </button>
@@ -49,7 +47,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="3 mins"/>
                                 <connections>
-                                    <action selector="minutes3tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mdk-Dl-V6l"/>
                                     <segue destination="2cq-mP-vgg" kind="presentation" identifier="timer3mins" id="2KL-MI-eiI"/>
                                 </connections>
                             </button>
@@ -58,7 +55,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="4 mins"/>
                                 <connections>
-                                    <action selector="minutes4tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mtC-87-YlO"/>
                                     <segue destination="2cq-mP-vgg" kind="presentation" identifier="timer4mins" id="EEl-hK-wyN"/>
                                 </connections>
                             </button>

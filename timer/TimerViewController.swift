@@ -10,17 +10,6 @@ import UIKit
 
 class TimerViewController: UIViewController {
     
-  @IBAction func munute1tapped(_ sender: UIButton) {
-        performSegue(withIdentifier: "timer1min", sender: self)
-    }
-    @IBAction func minutes2tapped(_ sender: Any) {
-        performSegue(withIdentifier: "timer2mins", sender: self)
-    }
-    @IBAction func minutes3tapped(_ sender: Any) {
-        performSegue(withIdentifier: "timer3mins", sender: self)
-    }
-    @IBAction func minutes4tapped(_ sender: Any) {
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
