@@ -35,6 +35,15 @@
                                     <segue destination="2cq-mP-vgg" kind="presentation" identifier="timer1min" id="C7Q-Ah-y24"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuG-oS-KLW">
+                                <rect key="frame" x="170" y="65" width="34" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="2 min"/>
+                                <connections>
+                                    <action selector="minutes2tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1su-np-95V"/>
+                                    <segue destination="2cq-mP-vgg" kind="presentation" identifier="timer2mins" id="zjY-Ib-Huw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.94117647058823528" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -77,8 +86,9 @@
     </scenes>
     <resources>
         <image name="1 min" width="60" height="60"/>
+        <image name="2 min" width="68" height="68"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="C7Q-Ah-y24"/>
+        <segue reference="zjY-Ib-Huw"/>
     </inferredMetricsTieBreakers>
 </document>
