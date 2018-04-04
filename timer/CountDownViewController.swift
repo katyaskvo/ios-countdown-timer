@@ -16,8 +16,6 @@ class CountDownViewController: UIViewController {
     @IBOutlet var displayTime: UILabel!
     
     func runTimer() {
-        print(numberOfSeconds)
-        print(displayTime)
         timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(CountDownViewController.updateTimer)), userInfo: nil, repeats: true)
         isTimerRunning = true
     }
