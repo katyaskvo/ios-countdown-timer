@@ -62,6 +62,14 @@
                                     <segue destination="2cq-mP-vgg" kind="presentation" identifier="timer4mins" id="EEl-hK-wyN"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0q-il-f0e">
+                                <rect key="frame" x="164" y="203" width="46" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="5 mins"/>
+                                <connections>
+                                    <segue destination="2cq-mP-vgg" kind="presentation" identifier="timer5mins" id="8LE-Hd-oIZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.94117647058823528" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -99,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CDC-3O-BZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="853" y="134"/>
+            <point key="canvasLocation" x="990" y="134"/>
         </scene>
     </scenes>
     <resources>
@@ -107,8 +115,9 @@
         <image name="2 min" width="68" height="68"/>
         <image name="3 mins" width="76" height="76"/>
         <image name="4 mins" width="84" height="84"/>
+        <image name="5 mins" width="92" height="92"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2KL-MI-eiI"/>
+        <segue reference="8LE-Hd-oIZ"/>
     </inferredMetricsTieBreakers>
 </document>
