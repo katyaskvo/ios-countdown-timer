@@ -117,7 +117,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fnP-Mq-3Hj" customClass="CircleProgressBar">
                                         <rect key="frame" x="152" y="152" width="33.5" height="33.5"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.96440672874450684" green="0.95326268672943115" blue="0.93726104497909546" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
                                 </subviews>
                                 <constraints>
