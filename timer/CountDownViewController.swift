@@ -50,7 +50,7 @@ class CountDownViewController: UIViewController {
     override func viewDidLoad() {
         print("view did load")
         super.viewDidLoad()
-        circleProgressBar.setProgress(1.0, animated: true, duration: 60.0)
+        circleProgressBar.setProgress(1.0, animated: true, duration: CGFloat(numberOfSeconds))
 
         displayTime.text = timeString(time: TimeInterval(numberOfSeconds))
         // Do any additional setup after loading the view, typically from a nib.
