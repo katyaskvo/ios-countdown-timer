@@ -50,6 +50,7 @@ class CountDownViewController: UIViewController {
     override func viewDidLoad() {
         print("view did load")
         super.viewDidLoad()
+        circleProgressBar.progressBarWidth = 1000.0 //value should be more then a half of the circle
         circleProgressBar.setProgress(1.0, animated: true, duration: CGFloat(numberOfSeconds))
 
         displayTime.text = timeString(time: TimeInterval(numberOfSeconds))
