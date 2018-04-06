@@ -64,6 +64,7 @@ class CountDownViewController: UIViewController {
         circleProgressBar.frame.size.height = CGFloat(circleSize)
         circleProgressBar.frame.size.width = CGFloat(circleSize)
         circleProgressBar.progressBarWidth = CGFloat(500)
+        circleProgressBar.startAngle = CGFloat(-90.0)
         circleProgressBar.setProgress(1.0, animated: true, duration: CGFloat(numberOfSeconds))
         print(circleProgressBar.frame.size.width)
         
