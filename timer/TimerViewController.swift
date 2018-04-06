@@ -21,6 +21,7 @@ class TimerViewController: UIViewController {
         if (segue.identifier == "timer1min") {
             let destVC : CountDownViewController = segue.destination as! CountDownViewController
             destVC.numberOfSeconds = 60
+            destVC.circleSize = 120
             destVC.runTimer()
         }
         
@@ -28,6 +29,7 @@ class TimerViewController: UIViewController {
         if (segue.identifier == "timer2mins") {
             let destVC : CountDownViewController = segue.destination as! CountDownViewController
             destVC.numberOfSeconds = 120
+            destVC.circleSize = 160
             destVC.runTimer()
         }
         
@@ -35,6 +37,7 @@ class TimerViewController: UIViewController {
         if (segue.identifier == "timer3mins") {
             let destVC : CountDownViewController = segue.destination as! CountDownViewController
             destVC.numberOfSeconds = 180
+            destVC.circleSize = 180
             destVC.runTimer()
         }
         
@@ -42,6 +45,7 @@ class TimerViewController: UIViewController {
         if (segue.identifier == "timer4mins") {
             let destVC : CountDownViewController = segue.destination as! CountDownViewController
             destVC.numberOfSeconds = 240
+            destVC.circleSize = 200
             destVC.runTimer()
         }
         
@@ -49,20 +53,23 @@ class TimerViewController: UIViewController {
         if (segue.identifier == "timer5mins") {
             let destVC : CountDownViewController = segue.destination as! CountDownViewController
             destVC.numberOfSeconds = 300
-            destVC.runTimer()
+            destVC.circleSize = 220
+           destVC.runTimer()
         }
 
         // 6 mins
         if (segue.identifier == "timer6mins") {
             let destVC : CountDownViewController = segue.destination as! CountDownViewController
             destVC.numberOfSeconds = 360
-            destVC.runTimer()
+            destVC.circleSize = 240
+          destVC.runTimer()
         }
         
         // 7 mins
         if (segue.identifier == "timer7mins") {
             let destVC : CountDownViewController = segue.destination as! CountDownViewController
             destVC.numberOfSeconds = 420
+            destVC.circleSize = 300
             destVC.runTimer()
         }
     }

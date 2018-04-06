@@ -14,8 +14,11 @@ class CountDownViewController: UIViewController {
     var isTimerRunning = false //This will be used to make sure only one timer is created at a time.
     
     var numberOfSeconds :Int = 0
+    var circleSize :Int = 0
     @IBOutlet var displayTime: UILabel!
-//    @IBOutlet weak var circleProgressBar: CircleProgressBar!
+    @IBOutlet weak var heightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var widthConstraint: NSLayoutConstraint!
+    //    @IBOutlet weak var circleProgressBar: CircleProgressBar!
     @IBOutlet weak var circleProgressBar: CircleProgressBar!
     
     
@@ -50,9 +53,20 @@ class CountDownViewController: UIViewController {
     override func viewDidLoad() {
         print("view did load")
         super.viewDidLoad()
-        circleProgressBar.progressBarWidth = 1000.0 //value should be more then a half of the circle
-        circleProgressBar.setProgress(1.0, animated: true, duration: CGFloat(numberOfSeconds))
+        
+        print(heightConstraint.constant)
+        heightConstraint.constant = CGFloat(circleSize)
+        widthConstraint.constant = CGFloat(circleSize)
+        circleProgressBar.layoutIfNeeded()
+        
+        print(heightConstraint.constant)
 
+        circleProgressBar.frame.size.height = CGFloat(circleSize)
+        circleProgressBar.frame.size.width = CGFloat(circleSize)
+        circleProgressBar.progressBarWidth = CGFloat(500)
+        circleProgressBar.setProgress(1.0, animated: true, duration: CGFloat(numberOfSeconds))
+        print(circleProgressBar.frame.size.width)
+        
         displayTime.text = timeString(time: TimeInterval(numberOfSeconds))
         // Do any additional setup after loading the view, typically from a nib.
     }

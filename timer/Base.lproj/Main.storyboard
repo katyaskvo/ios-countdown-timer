@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -110,18 +112,36 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" identifier="stopTimer" id="Ybt-gd-h9y"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fnP-Mq-3Hj" customClass="CircleProgressBar">
-                                <rect key="frame" x="37" y="338" width="300" height="300"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JCo-tO-gFY">
+                                <rect key="frame" x="18.5" y="165.5" width="337.5" height="337.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fnP-Mq-3Hj" customClass="CircleProgressBar">
+                                        <rect key="frame" x="152" y="152" width="33.5" height="33.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fnP-Mq-3Hj" firstAttribute="centerX" secondItem="JCo-tO-gFY" secondAttribute="centerX" id="Q9M-5t-66q"/>
+                                    <constraint firstItem="fnP-Mq-3Hj" firstAttribute="width" secondItem="JCo-tO-gFY" secondAttribute="width" multiplier="0.1" id="bZQ-JV-paP"/>
+                                    <constraint firstItem="fnP-Mq-3Hj" firstAttribute="height" secondItem="JCo-tO-gFY" secondAttribute="height" multiplier="0.1" id="o5Y-87-muG"/>
+                                    <constraint firstItem="fnP-Mq-3Hj" firstAttribute="centerY" secondItem="JCo-tO-gFY" secondAttribute="centerY" id="sCj-pC-0hL"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.94117647058823528" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="JCo-tO-gFY" firstAttribute="centerX" secondItem="hhC-b5-k2S" secondAttribute="centerX" id="XGp-9t-Quw"/>
+                            <constraint firstItem="JCo-tO-gFY" firstAttribute="centerY" secondItem="hhC-b5-k2S" secondAttribute="centerY" id="Xn4-Td-Vcp"/>
+                            <constraint firstItem="JCo-tO-gFY" firstAttribute="width" secondItem="hhC-b5-k2S" secondAttribute="width" multiplier="0.9" id="glE-VI-K0j"/>
+                            <constraint firstItem="JCo-tO-gFY" firstAttribute="height" secondItem="hhC-b5-k2S" secondAttribute="width" multiplier="0.9" id="tgd-y8-bAz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jPt-aT-zXD"/>
                     </view>
                     <connections>
                         <outlet property="circleProgressBar" destination="fnP-Mq-3Hj" id="d7E-kR-iNs"/>
                         <outlet property="displayTime" destination="cX8-fX-6UK" id="w7N-Jv-AWF"/>
+                        <outlet property="heightConstraint" destination="o5Y-87-muG" id="wRY-ah-GfO"/>
+                        <outlet property="widthConstraint" destination="bZQ-JV-paP" id="Ngj-24-zYZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CDC-3O-BZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
