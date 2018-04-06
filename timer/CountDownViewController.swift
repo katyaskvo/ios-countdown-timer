@@ -15,6 +15,7 @@ class CountDownViewController: UIViewController {
     
     var numberOfSeconds :Int = 0
     var circleSize :Int = 0
+    var circleColor :UIColor = UIColor(displayP3Red: 1.0, green: 0.0, blue: 0.0, alpha: 1.0)
     @IBOutlet var displayTime: UILabel!
     @IBOutlet weak var heightConstraint: NSLayoutConstraint!
     @IBOutlet weak var widthConstraint: NSLayoutConstraint!
@@ -66,7 +67,7 @@ class CountDownViewController: UIViewController {
         circleProgressBar.progressBarWidth = CGFloat(1000)
         circleProgressBar.startAngle = CGFloat(-90.0)
         circleProgressBar.progressBarProgressColor = UIColor.clear
-        circleProgressBar.progressBarTrackColor = UIColor.red
+        circleProgressBar.progressBarTrackColor = circleColor
         circleProgressBar.hintHidden = true
         circleProgressBar.setProgress(1.0, animated: true, duration: CGFloat(numberOfSeconds))
         print(circleProgressBar.frame.size.width)

@@ -22,6 +22,7 @@ class TimerViewController: UIViewController {
             let destVC : CountDownViewController = segue.destination as! CountDownViewController
             destVC.numberOfSeconds = 60
             destVC.circleSize = 120
+            destVC.circleColor = UIColor(displayP3Red: 1.0, green: 0.0, blue: 1.0, alpha: 1.0)
             destVC.runTimer()
         }
         
@@ -30,6 +31,7 @@ class TimerViewController: UIViewController {
             let destVC : CountDownViewController = segue.destination as! CountDownViewController
             destVC.numberOfSeconds = 120
             destVC.circleSize = 160
+            destVC.circleColor = UIColor(displayP3Red: 0.0, green: 0.0, blue: 1.0, alpha: 1.0)
             destVC.runTimer()
         }
         
@@ -38,6 +40,7 @@ class TimerViewController: UIViewController {
             let destVC : CountDownViewController = segue.destination as! CountDownViewController
             destVC.numberOfSeconds = 180
             destVC.circleSize = 180
+            destVC.circleColor = UIColor(displayP3Red: 0.0, green: 1.0, blue: 1.0, alpha: 1.0)
             destVC.runTimer()
         }
         
