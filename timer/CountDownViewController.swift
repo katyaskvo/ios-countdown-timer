@@ -45,9 +45,19 @@ class CountDownViewController: UIViewController {
         } else {
         numberOfSeconds -= 1     //This will decrement(count down)the seconds.
         displayTime.text = timeString(time: TimeInterval(numberOfSeconds)) //This will update the label.
+            
+            if numberOfSeconds <= 30 {
+                self.audioPlayerTickTock.rate = 2
+            }
+            if numberOfSeconds <= 60 {
+                self.audioPlayerTickTock.rate = 1.75
+            } else if numberOfSeconds <= 120 {
+                self.audioPlayerTickTock.rate = 1.5
+            } else if numberOfSeconds <= 180 {
+                self.audioPlayerTickTock.rate = 1.25
+            }
         }
     }
-    
 
     func timeString(time:TimeInterval) -> String {
         let hours = Int(time) / 3600
@@ -73,6 +83,7 @@ class CountDownViewController: UIViewController {
             print("filePath is empty!")
         }
         self.audioPlayerTickTock.numberOfLoops = -1
+        self.audioPlayerTickTock.enableRate = true
         self.audioPlayerTickTock.play()
         
         heightConstraint.constant = CGFloat(circleSize)
