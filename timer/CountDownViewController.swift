@@ -25,11 +25,13 @@ class CountDownViewController: UIViewController {
     @IBOutlet weak var circleProgressBar: CircleProgressBar!
     
     var audioPlayerTickTock: AVAudioPlayer!
-    
+    var audioPlayerAlarm: AVAudioPlayer!
+
     
     @IBAction func stopTimer(_ sender: Any) {
         timer.invalidate()
         self.audioPlayerTickTock.stop()
+        self.audioPlayerAlarm.stop()
     }
     func runTimer() {
 //        circleProgressBar.setProgress(CGFloat, animated: Bool, duration: 10)
@@ -41,6 +43,8 @@ class CountDownViewController: UIViewController {
         if numberOfSeconds < 1 {
             timer.invalidate()
             self.audioPlayerTickTock.stop()
+            self.audioPlayerAlarm.numberOfLoops = -1
+            self.audioPlayerAlarm.play()
             //Send alert to indicate "time's up!"
         } else {
         numberOfSeconds -= 1     //This will decrement(count down)the seconds.
@@ -48,8 +52,7 @@ class CountDownViewController: UIViewController {
             
             if numberOfSeconds <= 30 {
                 self.audioPlayerTickTock.rate = 2
-            }
-            if numberOfSeconds <= 60 {
+            } else if numberOfSeconds <= 60 {
                 self.audioPlayerTickTock.rate = 1.75
             } else if numberOfSeconds <= 120 {
                 self.audioPlayerTickTock.rate = 1.5
@@ -82,6 +85,21 @@ class CountDownViewController: UIViewController {
         } else {
             print("filePath is empty!")
         }
+        
+        if let filePathAlarm = Bundle.main.path(forResource: "alarm", ofType: "mp3", inDirectory: "") {
+            // Good, got a file
+            let filePathUrl = NSURL.fileURL(withPath: filePathAlarm)
+            
+            // Try to instantiate the audio player
+            do {
+                self.audioPlayerAlarm = try AVAudioPlayer(contentsOf: filePathUrl)
+            } catch {
+                print(error)
+            }
+        } else {
+            print("filePath is empty!")
+        }
+
         self.audioPlayerTickTock.numberOfLoops = -1
         self.audioPlayerTickTock.enableRate = true
         self.audioPlayerTickTock.play()

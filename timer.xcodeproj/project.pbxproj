@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0014EB4F207E0399008B1C24 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0014EB4E207E0399008B1C24 /* alarm.mp3 */; };
 		0030E4ED206D6FBF00921B09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0030E4EC206D6FBF00921B09 /* AppDelegate.swift */; };
 		0030E4EF206D6FBF00921B09 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0030E4EE206D6FBF00921B09 /* TimerViewController.swift */; };
 		0030E4F2206D6FBF00921B09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0030E4F0206D6FBF00921B09 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0014EB4E207E0399008B1C24 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
 		0030E4E9206D6FBF00921B09 /* timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0030E4EC206D6FBF00921B09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0030E4EE206D6FBF00921B09 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		007DA742207C9DB4008D1AA6 /* sound_effects */ = {
 			isa = PBXGroup;
 			children = (
+				0014EB4E207E0399008B1C24 /* alarm.mp3 */,
 				007DA740207C9DAC008D1AA6 /* tick-tock.mp3 */,
 			);
 			path = sound_effects;
@@ -281,6 +284,7 @@
 				0030E4F7206D6FBF00921B09 /* LaunchScreen.storyboard in Resources */,
 				0030E4F4206D6FBF00921B09 /* Assets.xcassets in Resources */,
 				0030E4F2206D6FBF00921B09 /* Main.storyboard in Resources */,
+				0014EB4F207E0399008B1C24 /* alarm.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
