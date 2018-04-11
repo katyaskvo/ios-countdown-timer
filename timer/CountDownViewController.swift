@@ -8,6 +8,8 @@
 
 import UIKit
 import CircleProgressBar
+import AudioToolbox
+import MediaPlayer
 
 class CountDownViewController: UIViewController {
     var timer = Timer()
@@ -22,9 +24,12 @@ class CountDownViewController: UIViewController {
     //    @IBOutlet weak var circleProgressBar: CircleProgressBar!
     @IBOutlet weak var circleProgressBar: CircleProgressBar!
     
+    var audioPlayerTickTock: AVAudioPlayer!
+    
     
     @IBAction func stopTimer(_ sender: Any) {
         timer.invalidate()
+        self.audioPlayerTickTock.stop()
     }
     func runTimer() {
 //        circleProgressBar.setProgress(CGFloat, animated: Bool, duration: 10)
@@ -33,9 +38,9 @@ class CountDownViewController: UIViewController {
     }
     @objc func updateTimer() {
         func updateProgress(_ progress: CGFloat, animated: Bool = true, initialDelay: CFTimeInterval = 0, duration: CFTimeInterval? = 10) {}
-        
         if numberOfSeconds < 1 {
             timer.invalidate()
+            self.audioPlayerTickTock.stop()
             //Send alert to indicate "time's up!"
         } else {
         numberOfSeconds -= 1     //This will decrement(count down)the seconds.
@@ -52,16 +57,28 @@ class CountDownViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        print("view did load")
         super.viewDidLoad()
         
-        print(heightConstraint.constant)
+        if let filePath = Bundle.main.path(forResource: "tick-tock", ofType: "mp3", inDirectory: "") {
+            // Good, got a file
+            let filePathUrl = NSURL.fileURL(withPath: filePath)
+            
+            // Try to instantiate the audio player
+            do {
+                self.audioPlayerTickTock = try AVAudioPlayer(contentsOf: filePathUrl)
+            } catch {
+                print(error)
+            }
+        } else {
+            print("filePath is empty!")
+        }
+        self.audioPlayerTickTock.numberOfLoops = -1
+        self.audioPlayerTickTock.play()
+        
         heightConstraint.constant = CGFloat(circleSize)
         widthConstraint.constant = CGFloat(circleSize)
         circleProgressBar.layoutIfNeeded()
         
-        print(heightConstraint.constant)
-
         circleProgressBar.frame.size.height = CGFloat(circleSize)
         circleProgressBar.frame.size.width = CGFloat(circleSize)
         circleProgressBar.progressBarWidth = CGFloat(1000)
