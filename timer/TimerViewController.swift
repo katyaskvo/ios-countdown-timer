@@ -76,9 +76,36 @@ destVC.circleSize = 240
         if (segue.identifier == "timer7mins") {
             let destVC : CountDownViewController = segue.destination as! CountDownViewController
             destVC.numberOfSeconds = 420
-            destVC.circleSize = 300
+            destVC.circleSize = 260
             destVC.circleColor = UIColor(displayP3Red: 241/255, green: 209/255, blue: 81/255, alpha: 1.0)
 
+            destVC.runTimer()
+        }
+        
+        // 8 mins
+        if (segue.identifier == "timer8mins") {
+            let destVC : CountDownViewController = segue.destination as! CountDownViewController
+            destVC.numberOfSeconds = 480
+            destVC.circleSize = 280
+            destVC.circleColor = UIColor(displayP3Red: 62/255, green: 164/255, blue: 99/255, alpha: 1.0)
+            destVC.runTimer()
+        }
+        
+        // 9 mins
+        if (segue.identifier == "timer9mins") {
+            let destVC : CountDownViewController = segue.destination as! CountDownViewController
+            destVC.numberOfSeconds = 540            
+            destVC.circleColor = UIColor(displayP3Red: 62/255, green: 164/255, blue: 99/255, alpha: 1.0)
+            destVC.circleSize = 300
+            destVC.runTimer()
+        }
+        
+        // 10 mins
+        if (segue.identifier == "timer10mins") {
+            let destVC : CountDownViewController = segue.destination as! CountDownViewController
+            destVC.numberOfSeconds = 600
+            destVC.circleColor = UIColor(displayP3Red: 62/255, green: 164/255, blue: 99/255, alpha: 1.0)
+            destVC.circleSize = 320
             destVC.runTimer()
         }
     }
