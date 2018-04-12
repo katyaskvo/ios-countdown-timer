@@ -136,15 +136,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JCo-tO-gFY">
                                 <rect key="frame" x="18.5" y="165.5" width="337.5" height="337.5"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fnP-Mq-3Hj" customClass="CircleProgressBar">
-                                        <rect key="frame" x="152" y="152" width="33.5" height="33.5"/>
-                                        <color key="backgroundColor" red="0.96440672874450684" green="0.95326268672943115" blue="0.93726104497909546" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fnP-Mq-3Hj" customClass="CircleProgressBar">
+                                        <color key="backgroundColor" red="0.96440672869999999" green="0.95326268670000003" blue="0.93726104499999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="fnP-Mq-3Hj" firstAttribute="centerX" secondItem="JCo-tO-gFY" secondAttribute="centerX" id="Q9M-5t-66q"/>
-                                    <constraint firstItem="fnP-Mq-3Hj" firstAttribute="width" secondItem="JCo-tO-gFY" secondAttribute="width" multiplier="0.1" id="bZQ-JV-paP"/>
-                                    <constraint firstItem="fnP-Mq-3Hj" firstAttribute="height" secondItem="JCo-tO-gFY" secondAttribute="height" multiplier="0.1" id="o5Y-87-muG"/>
+                                    <constraint firstItem="fnP-Mq-3Hj" firstAttribute="width" secondItem="JCo-tO-gFY" secondAttribute="width" id="bZQ-JV-paP"/>
+                                    <constraint firstItem="fnP-Mq-3Hj" firstAttribute="height" secondItem="JCo-tO-gFY" secondAttribute="height" id="o5Y-87-muG"/>
                                     <constraint firstItem="fnP-Mq-3Hj" firstAttribute="centerY" secondItem="JCo-tO-gFY" secondAttribute="centerY" id="sCj-pC-0hL"/>
                                 </constraints>
                             </view>
@@ -160,8 +159,10 @@
                     </view>
                     <connections>
                         <outlet property="circleProgressBar" destination="fnP-Mq-3Hj" id="d7E-kR-iNs"/>
+                        <outlet property="circleSuperView" destination="glE-VI-K0j" id="vE6-M1-ivw"/>
                         <outlet property="displayTime" destination="cX8-fX-6UK" id="w7N-Jv-AWF"/>
                         <outlet property="heightConstraint" destination="o5Y-87-muG" id="wRY-ah-GfO"/>
+                        <outlet property="superView" destination="hhC-b5-k2S" id="IAO-PJ-zFv"/>
                         <outlet property="widthConstraint" destination="bZQ-JV-paP" id="Ngj-24-zYZ"/>
                     </connections>
                 </viewController>

@@ -13,15 +13,16 @@ import MediaPlayer
 
 class CountDownViewController: UIViewController {
     var timer = Timer()
+    @IBOutlet weak var circleSuperView: NSLayoutConstraint!
     var isTimerRunning = false //This will be used to make sure only one timer is created at a time.
+    @IBOutlet var superView: UIView!
     
     var numberOfSeconds :Int = 0
-    var circleSize :Int = 0
+    var circleSize :CGFloat = 0
     var circleColor :UIColor = UIColor(displayP3Red: 1.0, green: 0.0, blue: 0.0, alpha: 1.0)
     @IBOutlet var displayTime: UILabel!
     @IBOutlet weak var heightConstraint: NSLayoutConstraint!
     @IBOutlet weak var widthConstraint: NSLayoutConstraint!
-    //    @IBOutlet weak var circleProgressBar: CircleProgressBar!
     @IBOutlet weak var circleProgressBar: CircleProgressBar!
     
     var audioPlayerTickTock: AVAudioPlayer!
@@ -104,12 +105,10 @@ class CountDownViewController: UIViewController {
         self.audioPlayerTickTock.enableRate = true
         self.audioPlayerTickTock.play()
         
-        heightConstraint.constant = CGFloat(circleSize)
-        widthConstraint.constant = CGFloat(circleSize)
+        heightConstraint.constant = CGFloat(-(1 - circleSize) * superView.frame.size.width * 0.9)
+        widthConstraint.constant = CGFloat(-(1 - circleSize) * superView.frame.size.width * 0.9)
         circleProgressBar.layoutIfNeeded()
         
-        circleProgressBar.frame.size.height = CGFloat(circleSize)
-        circleProgressBar.frame.size.width = CGFloat(circleSize)
         circleProgressBar.progressBarWidth = CGFloat(1000)
         circleProgressBar.startAngle = CGFloat(-90.0)
         circleProgressBar.progressBarProgressColor = UIColor.clear
