@@ -1,12 +1,12 @@
 PODS:
-  - RPCircularProgress (0.3.1)
+  - CircleProgressBar (0.32)
 
 DEPENDENCIES:
-  - RPCircularProgress
+  - CircleProgressBar (~> 0.32)
 
 SPEC CHECKSUMS:
-  RPCircularProgress: 33ac3550d0fc3c4d368701e804bb4b2bbe5e86f3
+  CircleProgressBar: 3920079be5224b62b3d9ed6eeb23ac01c835b681
 
-PODFILE CHECKSUM: 88c1cca41efad817afa051371e7f61e71f50a72d
+PODFILE CHECKSUM: 371c2023f940d9ca6d55fdba6d8c980d9643258e
 
 COCOAPODS: 1.4.0

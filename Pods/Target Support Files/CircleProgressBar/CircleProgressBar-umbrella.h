@@ -10,7 +10,8 @@
 #endif
 #endif
 
+#import "CircleProgressBar.h"
 
-FOUNDATION_EXPORT double RPCircularProgressVersionNumber;
-FOUNDATION_EXPORT const unsigned char RPCircularProgressVersionString[];
+FOUNDATION_EXPORT double CircleProgressBarVersionNumber;
+FOUNDATION_EXPORT const unsigned char CircleProgressBarVersionString[];
 
