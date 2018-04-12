@@ -117,13 +117,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cX8-fX-6UK">
-                                <rect key="frame" x="113" y="270" width="149" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qB-QO-VyR">
                                 <rect key="frame" x="335" y="20" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
@@ -160,7 +153,6 @@
                     <connections>
                         <outlet property="circleProgressBar" destination="fnP-Mq-3Hj" id="d7E-kR-iNs"/>
                         <outlet property="circleSuperView" destination="glE-VI-K0j" id="vE6-M1-ivw"/>
-                        <outlet property="displayTime" destination="cX8-fX-6UK" id="w7N-Jv-AWF"/>
                         <outlet property="heightConstraint" destination="o5Y-87-muG" id="wRY-ah-GfO"/>
                         <outlet property="superView" destination="hhC-b5-k2S" id="IAO-PJ-zFv"/>
                         <outlet property="widthConstraint" destination="bZQ-JV-paP" id="Ngj-24-zYZ"/>

@@ -20,7 +20,6 @@ class CountDownViewController: UIViewController {
     var numberOfSeconds :Int = 0
     var circleSize :CGFloat = 0
     var circleColor :UIColor = UIColor(displayP3Red: 1.0, green: 0.0, blue: 0.0, alpha: 1.0)
-    @IBOutlet var displayTime: UILabel!
     @IBOutlet weak var heightConstraint: NSLayoutConstraint!
     @IBOutlet weak var widthConstraint: NSLayoutConstraint!
     @IBOutlet weak var circleProgressBar: CircleProgressBar!
@@ -48,8 +47,7 @@ class CountDownViewController: UIViewController {
             self.audioPlayerAlarm.play()
             //Send alert to indicate "time's up!"
         } else {
-        numberOfSeconds -= 1     //This will decrement(count down)the seconds.
-        displayTime.text = timeString(time: TimeInterval(numberOfSeconds)) //This will update the label.
+            numberOfSeconds -= 1     //This will decrement(count down)the seconds.
             
             if numberOfSeconds <= 30 {
                 self.audioPlayerTickTock.rate = 2
@@ -117,7 +115,6 @@ class CountDownViewController: UIViewController {
         circleProgressBar.setProgress(1.0, animated: true, duration: CGFloat(numberOfSeconds))
         print(circleProgressBar.frame.size.width)
         
-        displayTime.text = timeString(time: TimeInterval(numberOfSeconds))
         // Do any additional setup after loading the view, typically from a nib.
     }
     
