@@ -15,6 +15,7 @@
 		0030E4F7206D6FBF00921B09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0030E4F5206D6FBF00921B09 /* LaunchScreen.storyboard */; };
 		0030E502206D6FBF00921B09 /* timerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0030E501206D6FBF00921B09 /* timerTests.swift */; };
 		0030E50D206D6FBF00921B09 /* timerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0030E50C206D6FBF00921B09 /* timerUITests.swift */; };
+		0051B661207F838200B56168 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0051B660207F838200B56168 /* RoundButton.swift */; };
 		007DA741207C9DAC008D1AA6 /* tick-tock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 007DA740207C9DAC008D1AA6 /* tick-tock.mp3 */; };
 		00A39FA320741D270065A9B8 /* CountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A39FA220741D270065A9B8 /* CountDownViewController.swift */; };
 		967921ED0608E13CD4C17390 /* Pods_timer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35C31B95480D0F08E9696CE /* Pods_timer.framework */; };
@@ -52,6 +53,7 @@
 		0030E508206D6FBF00921B09 /* timerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = timerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0030E50C206D6FBF00921B09 /* timerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerUITests.swift; sourceTree = "<group>"; };
 		0030E50E206D6FBF00921B09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0051B660207F838200B56168 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		007DA740207C9DAC008D1AA6 /* tick-tock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "tick-tock.mp3"; sourceTree = "<group>"; };
 		00A39FA220741D270065A9B8 /* CountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownViewController.swift; sourceTree = "<group>"; };
 		3CF99F2C7C8DB361D9FEB698 /* Pods-timer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-timer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-timer/Pods-timer.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				0030E4F5206D6FBF00921B09 /* LaunchScreen.storyboard */,
 				0030E4F8206D6FBF00921B09 /* Info.plist */,
 				00A39FA220741D270065A9B8 /* CountDownViewController.swift */,
+				0051B660207F838200B56168 /* RoundButton.swift */,
 			);
 			path = timer;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0051B661207F838200B56168 /* RoundButton.swift in Sources */,
 				00A39FA320741D270065A9B8 /* CountDownViewController.swift in Sources */,
 				0030E4EF206D6FBF00921B09 /* TimerViewController.swift in Sources */,
 				0030E4ED206D6FBF00921B09 /* AppDelegate.swift in Sources */,

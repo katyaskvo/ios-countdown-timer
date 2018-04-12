@@ -34,7 +34,6 @@ class CountDownViewController: UIViewController {
         self.audioPlayerAlarm.stop()
     }
     func runTimer() {
-//        circleProgressBar.setProgress(CGFloat, animated: Bool, duration: 10)
         timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(CountDownViewController.updateTimer)), userInfo: nil, repeats: true)
         isTimerRunning = true
     }
