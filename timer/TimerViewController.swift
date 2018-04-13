@@ -11,11 +11,30 @@ import UIKit
 class TimerViewController: UIViewController {
     @IBOutlet var superView: UIView!
     @IBOutlet weak var onebutton: RoundButton!
-    @IBOutlet weak var button1: NSLayoutConstraint!
+    @IBOutlet weak var button2: RoundButton!
+    @IBOutlet weak var button3: RoundButton!
+    @IBOutlet weak var button4: RoundButton!
+    @IBOutlet weak var button5: RoundButton!
+    @IBOutlet weak var button6: RoundButton!
+    @IBOutlet weak var button7: RoundButton!
+    @IBOutlet weak var button8: RoundButton!
+    @IBOutlet weak var button9: RoundButton!
+    @IBOutlet weak var button10: RoundButton!
+//    @IBOutlet weak var button1: NSLayoutConstraint!
     
     override func viewDidLoad() {
+        var buttonUnit = superView.frame.size.height * 0.0435
         super.viewDidLoad()
-        onebutton.cornerRadius = superView.frame.size.height * 0.045 / 2
+        onebutton.cornerRadius = buttonUnit / 2
+        button2.cornerRadius = (buttonUnit * 1.1) / 2
+        button3.cornerRadius = (buttonUnit * 1.2) / 2
+        button4.cornerRadius = (buttonUnit * 1.3) / 2
+        button5.cornerRadius = (buttonUnit * 1.4) / 2
+        button6.cornerRadius = (buttonUnit * 1.5) / 2
+        button7.cornerRadius = (buttonUnit * 1.6) / 2
+        button8.cornerRadius = (buttonUnit * 1.7) / 2
+        button9.cornerRadius = (buttonUnit * 1.8) / 2
+        button10.cornerRadius = (buttonUnit * 1.9) / 2
         // Do any additional setup after loading the view, typically from a nib.
     }
 
