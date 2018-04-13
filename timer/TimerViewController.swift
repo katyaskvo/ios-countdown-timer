@@ -9,9 +9,13 @@
 import UIKit
 
 class TimerViewController: UIViewController {
+    @IBOutlet var superView: UIView!
+    @IBOutlet weak var onebutton: RoundButton!
+    @IBOutlet weak var button1: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        onebutton.cornerRadius = superView.frame.size.height * 0.045 / 2
         // Do any additional setup after loading the view, typically from a nib.
     }
 
