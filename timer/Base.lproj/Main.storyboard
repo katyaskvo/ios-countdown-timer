@@ -20,78 +20,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuG-oS-KLW">
-                                <rect key="frame" x="170" y="88" width="34" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="2 min"/>
-                                <connections>
-                                    <segue destination="2cq-mP-vgg" kind="presentation" identifier="timer2mins" modalTransitionStyle="crossDissolve" id="zjY-Ib-Huw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5BM-9m-Qkq">
-                                <rect key="frame" x="168" y="132" width="38" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="3 mins"/>
-                                <connections>
-                                    <segue destination="2cq-mP-vgg" kind="presentation" identifier="timer3mins" modalTransitionStyle="crossDissolve" id="2KL-MI-eiI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0md-Mo-car">
-                                <rect key="frame" x="166" y="180" width="42" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="4 mins"/>
-                                <connections>
-                                    <segue destination="2cq-mP-vgg" kind="presentation" identifier="timer4mins" modalTransitionStyle="crossDissolve" id="EEl-hK-wyN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0q-il-f0e">
-                                <rect key="frame" x="164" y="232" width="46" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="5 mins"/>
-                                <connections>
-                                    <segue destination="2cq-mP-vgg" kind="presentation" identifier="timer5mins" modalTransitionStyle="crossDissolve" id="8LE-Hd-oIZ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1b-la-mdB">
-                                <rect key="frame" x="162" y="288" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="6 mins"/>
-                                <connections>
-                                    <segue destination="2cq-mP-vgg" kind="presentation" identifier="timer6mins" modalTransitionStyle="crossDissolve" id="2hh-4q-DcW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrQ-BM-lqa">
-                                <rect key="frame" x="160" y="348" width="54" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="7 mins"/>
-                                <connections>
-                                    <segue destination="2cq-mP-vgg" kind="presentation" identifier="timer7mins" modalTransitionStyle="crossDissolve" id="KKs-sx-7lg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nW4-17-hLk">
-                                <rect key="frame" x="158" y="412" width="58" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="8 mins"/>
-                                <connections>
-                                    <segue destination="2cq-mP-vgg" kind="presentation" identifier="timer8mins" modalTransitionStyle="crossDissolve" id="r2O-qd-xdN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6C3-ox-plm">
-                                <rect key="frame" x="156" y="480" width="62" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="9 mins"/>
-                                <connections>
-                                    <segue destination="2cq-mP-vgg" kind="presentation" identifier="timer9mins" modalTransitionStyle="crossDissolve" id="Tym-14-BR6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hne-UD-gIT">
-                                <rect key="frame" x="154" y="553" width="66" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="10 mins"/>
-                                <connections>
-                                    <segue destination="2cq-mP-vgg" kind="presentation" identifier="timer10mins" modalTransitionStyle="crossDissolve" id="CE1-0p-ER1"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="awc-IP-CZv" customClass="RoundButton" customModule="timer" customModuleProvider="target">
                                 <rect key="frame" x="172" y="58" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
@@ -130,6 +58,9 @@
                                 <state key="normal" title="2">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="2cq-mP-vgg" kind="presentation" identifier="timer2mins" id="aND-uO-GDB"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ow9-rg-PLE" userLabel="Space2">
                                 <rect key="frame" x="0.0" y="135" width="375" height="14.5"/>
@@ -140,6 +71,9 @@
                                 <state key="normal" title="3">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="2cq-mP-vgg" kind="presentation" identifier="timer3mins" id="IAa-yz-284"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJU-9V-Fcv" userLabel="Space3">
                                 <rect key="frame" x="0.0" y="184.5" width="375" height="14.5"/>
@@ -150,6 +84,9 @@
                                 <state key="normal" title="4">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="2cq-mP-vgg" kind="presentation" identifier="timer4mins" id="r0t-Yd-IXd"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1EX-SK-fFT" userLabel="Space4">
                                 <rect key="frame" x="0.0" y="236.5" width="375" height="14.5"/>
@@ -160,6 +97,9 @@
                                 <state key="normal" title="5">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="2cq-mP-vgg" kind="presentation" identifier="timer5mins" id="KUT-OZ-PpD"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4MT-7I-TYm" userLabel="Space5">
                                 <rect key="frame" x="0.0" y="291.5" width="375" height="14.5"/>
@@ -170,6 +110,9 @@
                                 <state key="normal" title="6">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="2cq-mP-vgg" kind="presentation" identifier="timer6mins" id="EmL-yE-vk9"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Owv-7y-piP" userLabel="Space6">
                                 <rect key="frame" x="0.0" y="349.5" width="375" height="14.5"/>
@@ -180,6 +123,9 @@
                                 <state key="normal" title="7">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="2cq-mP-vgg" kind="presentation" identifier="timer7mins" id="SAD-N9-Cw1"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lbD-mg-YfC" userLabel="Space7">
                                 <rect key="frame" x="0.0" y="410.5" width="375" height="14.5"/>
@@ -190,6 +136,9 @@
                                 <state key="normal" title="8">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="2cq-mP-vgg" kind="presentation" identifier="timer8mins" id="tEe-Bf-e9i"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IBA-sw-H5Q" userLabel="Space8">
                                 <rect key="frame" x="0.0" y="474.5" width="375" height="14.5"/>
@@ -200,6 +149,9 @@
                                 <state key="normal" title="9">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="2cq-mP-vgg" kind="presentation" identifier="timer9mins" id="Plh-Dg-KTS"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2B-Qi-Cxy" userLabel="Space9">
                                 <rect key="frame" x="0.0" y="541" width="375" height="14.5"/>
@@ -210,6 +162,9 @@
                                 <state key="normal" title="10">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="2cq-mP-vgg" kind="presentation" identifier="timer10mins" id="70M-d2-4DA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.94117647059999998" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -363,18 +318,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="10 mins" width="132" height="132"/>
-        <image name="2 min" width="68" height="68"/>
-        <image name="3 mins" width="76" height="76"/>
-        <image name="4 mins" width="84" height="84"/>
-        <image name="5 mins" width="92" height="92"/>
-        <image name="6 mins" width="100" height="100"/>
-        <image name="7 mins" width="108" height="108"/>
-        <image name="8 mins" width="116" height="116"/>
-        <image name="9 mins" width="124" height="124"/>
         <image name="close button" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fJd-Q5-olY"/>
+        <segue reference="tEe-Bf-e9i"/>
     </inferredMetricsTieBreakers>
 </document>
