@@ -43,6 +43,7 @@ class CountDownViewController: UIViewController {
             timer.invalidate()
             self.audioPlayerTickTock.stop()
             self.audioPlayerAlarm.numberOfLoops = -1
+            self.audioPlayerAlarm.rate = 0.6
             self.audioPlayerAlarm.play()
             //Send alert to indicate "time's up!"
         } else {
@@ -70,7 +71,7 @@ class CountDownViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let filePath = Bundle.main.path(forResource: "tick-tock", ofType: "mp3", inDirectory: "") {
+        if let filePath = Bundle.main.path(forResource: "tick-tock", ofType: "wav", inDirectory: "") {
             // Good, got a file
             let filePathUrl = NSURL.fileURL(withPath: filePath)
             
@@ -84,7 +85,7 @@ class CountDownViewController: UIViewController {
             print("filePath is empty!")
         }
         
-        if let filePathAlarm = Bundle.main.path(forResource: "alarm", ofType: "mp3", inDirectory: "") {
+        if let filePathAlarm = Bundle.main.path(forResource: "alarm", ofType: "wav", inDirectory: "") {
             // Good, got a file
             let filePathUrl = NSURL.fileURL(withPath: filePathAlarm)
             

@@ -43,7 +43,7 @@ class TimerViewController: UIViewController {
         
         // 1 min
         if (segue.identifier == "timer1min") {
-            destVC.numberOfSeconds = 60
+            destVC.numberOfSeconds = 10
             destVC.circleSize = 0.37
             destVC.circleColor = UIColor(displayP3Red: 235/255, green: 50/255, blue: 50/255, alpha: 1.0)
             destVC.runTimer()
