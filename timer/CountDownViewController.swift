@@ -44,6 +44,12 @@ class CountDownViewController: UIViewController {
             self.audioPlayerTickTock.stop()
             self.audioPlayerAlarm.numberOfLoops = -1
             self.audioPlayerAlarm.rate = 0.6
+            do {
+                try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            }
+            catch {
+                // report for an error
+            }
             self.audioPlayerAlarm.play()
             //Send alert to indicate "time's up!"
         } else {
@@ -82,7 +88,7 @@ class CountDownViewController: UIViewController {
                 print(error)
             }
         } else {
-            print("filePath is empty!")
+            print("tick-tock filePath is empty!")
         }
         
         if let filePathAlarm = Bundle.main.path(forResource: "alarm", ofType: "wav", inDirectory: "") {
@@ -92,15 +98,22 @@ class CountDownViewController: UIViewController {
             // Try to instantiate the audio player
             do {
                 self.audioPlayerAlarm = try AVAudioPlayer(contentsOf: filePathUrl)
+
             } catch {
                 print(error)
             }
         } else {
-            print("filePath is empty!")
+            print("alarm filePath is empty!")
         }
 
         self.audioPlayerTickTock.numberOfLoops = -1
         self.audioPlayerTickTock.enableRate = true
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+        }
+        catch {
+            // report for an error
+        }
         self.audioPlayerTickTock.play()
         
         heightConstraint.constant = CGFloat(-(1 - circleSize) * superView.frame.size.width * 0.9)
