@@ -4,9 +4,13 @@ PODS:
 DEPENDENCIES:
   - CircleProgressBar (~> 0.32)
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CircleProgressBar
+
 SPEC CHECKSUMS:
   CircleProgressBar: 3920079be5224b62b3d9ed6eeb23ac01c835b681
 
 PODFILE CHECKSUM: 371c2023f940d9ca6d55fdba6d8c980d9643258e
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.0

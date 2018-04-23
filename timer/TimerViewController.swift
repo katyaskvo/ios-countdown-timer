@@ -23,7 +23,7 @@ class TimerViewController: UIViewController {
 //    @IBOutlet weak var button1: NSLayoutConstraint!
     
     override func viewDidLoad() {
-        var buttonUnit = superView.frame.size.height * 0.0435
+        let buttonUnit = superView.frame.size.height * 0.0435
         super.viewDidLoad()
         onebutton.cornerRadius = buttonUnit / 2
         button2.cornerRadius = (buttonUnit * 1.1) / 2
