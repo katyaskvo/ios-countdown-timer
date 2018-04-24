@@ -277,12 +277,16 @@
                                     <view alpha="0.0" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IZG-pO-c13">
                                         <rect key="frame" x="163" y="164" width="10" height="10"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.86666666670000003" green="0.24313725489999999" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.52156862749999999" green="0.27450980390000002" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
                                     <view alpha="0.0" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XGc-7g-934">
                                         <rect key="frame" x="163" y="164" width="10" height="10"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.97254901959999995" green="0.46274509800000002" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.52156862749999999" green="0.27450980390000002" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                    <view alpha="0.0" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RZq-6g-oTs">
+                                        <rect key="frame" x="163" y="164" width="10" height="10"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -312,6 +316,7 @@
                         <viewLayoutGuide key="safeArea" id="jPt-aT-zXD"/>
                     </view>
                     <connections>
+                        <outlet property="animatedCircle4" destination="RZq-6g-oTs" id="RyA-U1-XGi"/>
                         <outlet property="animatedOrangeCircle" destination="XGc-7g-934" id="RYC-rZ-kZy"/>
                         <outlet property="animatedPinkCircle" destination="IZG-pO-c13" id="ZaD-E6-8zj"/>
                         <outlet property="animatedPurpleCircle" destination="8kd-bh-pX4" id="ZW0-cQ-OJZ"/>
