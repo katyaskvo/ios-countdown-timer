@@ -27,6 +27,7 @@ class CountDownViewController: UIViewController {
     var audioPlayerTickTock: AVAudioPlayer!
     var audioPlayerAlarm: AVAudioPlayer!
 
+    @IBOutlet weak var animatedPurpleCircle: UIView!
     
     @IBAction func stopTimer(_ sender: Any) {
         timer.invalidate()
@@ -36,6 +37,35 @@ class CountDownViewController: UIViewController {
     func runTimer() {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(CountDownViewController.updateTimer)), userInfo: nil, repeats: true)
         isTimerRunning = true
+    }
+    
+    func animateAlarm() {
+        let alarmOpacityAnimation = CAKeyframeAnimation(keyPath: "opacity")
+        alarmOpacityAnimation.duration = 5
+        alarmOpacityAnimation.repeatCount = Float.infinity
+        alarmOpacityAnimation.keyTimes = [0, 1]
+        alarmOpacityAnimation.values = [1, 0]
+        
+        let alarmScaleAnimation = CAKeyframeAnimation(keyPath: "transform.scale")
+        alarmScaleAnimation.duration = 5
+        alarmScaleAnimation.repeatCount = Float.infinity
+        alarmScaleAnimation.keyTimes = [0, 1]
+        alarmScaleAnimation.values = [1, 30]
+        
+        let alarmAnimations = CAAnimationGroup()
+        alarmAnimations.duration = 5
+        alarmAnimations.repeatCount = Float.infinity
+        alarmAnimations.beginTime = CACurrentMediaTime()
+        alarmAnimations.animations = [alarmOpacityAnimation, alarmScaleAnimation]
+        
+        UIView.animate(
+            withDuration: 1,
+            delay: 0,
+            options: [.curveLinear],
+            animations: {
+                self.animatedPurpleCircle.layer.add(alarmAnimations, forKey: "opacity animation")
+            }
+        )
     }
     @objc func updateTimer() {
         func updateProgress(_ progress: CGFloat, animated: Bool = true, initialDelay: CFTimeInterval = 0, duration: CFTimeInterval? = 10) {}
@@ -51,6 +81,7 @@ class CountDownViewController: UIViewController {
                 // report for an error
             }
             self.audioPlayerAlarm.play()
+            animateAlarm()
             //Send alert to indicate "time's up!"
         } else {
             numberOfSeconds -= 1     //This will decrement(count down)the seconds.
@@ -67,15 +98,16 @@ class CountDownViewController: UIViewController {
         }
     }
 
-    func timeString(time:TimeInterval) -> String {
-        let hours = Int(time) / 3600
-        let minutes = Int(time) / 60 % 60
-        let seconds = Int(time) % 60
-        return String(format:"%02i:%02i:%02i", hours, minutes, seconds)
-    }
-    
+//    func timeString(time:TimeInterval) -> String {
+//        let hours = Int(time) / 3600
+//        let minutes = Int(time) / 60 % 60
+//        let seconds = Int(time) % 60
+//        return String(format:"%02i:%02i:%02i", hours, minutes, seconds)
+//    }
+//
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.animatedPurpleCircle.layer.cornerRadius = self.animatedPurpleCircle.layer.bounds.size.width / 2
         
         if let filePath = Bundle.main.path(forResource: "tick-tock", ofType: "wav", inDirectory: "") {
             // Good, got a file
