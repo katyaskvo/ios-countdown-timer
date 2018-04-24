@@ -269,28 +269,40 @@
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fnP-Mq-3Hj" customClass="CircleProgressBar">
                                         <color key="backgroundColor" red="0.96440672869999999" green="0.95326268670000003" blue="0.93726104499999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
-                                    <view alpha="0.0" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aCO-2T-1rh">
+                                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCO-2T-1rh">
                                         <rect key="frame" x="162" y="164" width="10" height="10"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     </view>
-                                    <view alpha="0.0" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AaA-UN-QlY">
+                                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AaA-UN-QlY">
                                         <rect key="frame" x="163" y="164" width="10" height="10"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     </view>
-                                    <view alpha="0.0" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bNN-Hr-4we">
+                                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNN-Hr-4we">
                                         <rect key="frame" x="162" y="164" width="10" height="10"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     </view>
-                                    <view alpha="0.0" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RZq-6g-oTs">
+                                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RZq-6g-oTs">
                                         <rect key="frame" x="163" y="164" width="10" height="10"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="aCO-2T-1rh" firstAttribute="centerY" secondItem="JCo-tO-gFY" secondAttribute="centerY" id="01U-RP-QRX"/>
+                                    <constraint firstItem="AaA-UN-QlY" firstAttribute="centerY" secondItem="JCo-tO-gFY" secondAttribute="centerY" id="2ox-0H-OXy"/>
+                                    <constraint firstItem="RZq-6g-oTs" firstAttribute="width" secondItem="JCo-tO-gFY" secondAttribute="width" multiplier="0.03" id="45J-sO-sO8"/>
+                                    <constraint firstItem="AaA-UN-QlY" firstAttribute="height" secondItem="JCo-tO-gFY" secondAttribute="width" multiplier="0.03" id="6o6-8O-SCL"/>
+                                    <constraint firstItem="aCO-2T-1rh" firstAttribute="height" secondItem="JCo-tO-gFY" secondAttribute="width" multiplier="0.03" id="HWM-fs-qs2"/>
+                                    <constraint firstItem="bNN-Hr-4we" firstAttribute="width" secondItem="JCo-tO-gFY" secondAttribute="width" multiplier="0.03" id="KGB-2I-8At"/>
+                                    <constraint firstItem="aCO-2T-1rh" firstAttribute="centerX" secondItem="JCo-tO-gFY" secondAttribute="centerX" id="M8J-3l-Jmr"/>
+                                    <constraint firstItem="aCO-2T-1rh" firstAttribute="width" secondItem="JCo-tO-gFY" secondAttribute="width" multiplier="0.03" id="PoK-Xx-obX"/>
                                     <constraint firstItem="fnP-Mq-3Hj" firstAttribute="centerX" secondItem="JCo-tO-gFY" secondAttribute="centerX" id="Q9M-5t-66q"/>
+                                    <constraint firstItem="bNN-Hr-4we" firstAttribute="centerX" secondItem="JCo-tO-gFY" secondAttribute="centerX" id="VPe-hX-Wtz"/>
+                                    <constraint firstItem="bNN-Hr-4we" firstAttribute="height" secondItem="JCo-tO-gFY" secondAttribute="width" multiplier="0.03" id="aIk-W7-zRr"/>
                                     <constraint firstItem="fnP-Mq-3Hj" firstAttribute="width" secondItem="JCo-tO-gFY" secondAttribute="width" id="bZQ-JV-paP"/>
+                                    <constraint firstItem="RZq-6g-oTs" firstAttribute="centerX" secondItem="JCo-tO-gFY" secondAttribute="centerX" id="jqg-uh-eUO"/>
+                                    <constraint firstItem="RZq-6g-oTs" firstAttribute="height" secondItem="JCo-tO-gFY" secondAttribute="width" multiplier="0.03" id="nW6-rY-Zyb"/>
                                     <constraint firstItem="fnP-Mq-3Hj" firstAttribute="height" secondItem="JCo-tO-gFY" secondAttribute="height" id="o5Y-87-muG"/>
+                                    <constraint firstItem="bNN-Hr-4we" firstAttribute="centerY" secondItem="JCo-tO-gFY" secondAttribute="centerY" id="rRm-Dx-FJd"/>
                                     <constraint firstItem="fnP-Mq-3Hj" firstAttribute="centerY" secondItem="JCo-tO-gFY" secondAttribute="centerY" id="sCj-pC-0hL"/>
+                                    <constraint firstItem="AaA-UN-QlY" firstAttribute="width" secondItem="JCo-tO-gFY" secondAttribute="width" multiplier="0.03" id="sKm-CP-Cqj"/>
+                                    <constraint firstItem="AaA-UN-QlY" firstAttribute="centerX" secondItem="JCo-tO-gFY" secondAttribute="centerX" id="wQ7-3B-HNF"/>
+                                    <constraint firstItem="RZq-6g-oTs" firstAttribute="centerY" secondItem="JCo-tO-gFY" secondAttribute="centerY" id="zi0-sJ-igR"/>
                                 </constraints>
                             </view>
                             <button autoresizesSubviews="NO" opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qB-QO-VyR">

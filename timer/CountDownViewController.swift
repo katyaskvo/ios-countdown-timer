@@ -136,10 +136,11 @@ class CountDownViewController: UIViewController {
         //alarm animated circles
         
         //Circle corner radius
-        self.animatedCircle1.layer.cornerRadius = self.animatedCircle1.layer.bounds.size.width / 2
-        self.animatedCircle2.layer.cornerRadius = self.animatedCircle2.layer.bounds.size.width / 2
-        self.animatedCircle3.layer.cornerRadius = self.animatedCircle3.layer.bounds.size.width / 2
-        self.animatedCircle4.layer.cornerRadius = self.animatedCircle4.layer.bounds.size.width / 2
+        let alarmRadius = self.superView.layer.bounds.size.width * 0.027 / 2
+        self.animatedCircle1.layer.cornerRadius = alarmRadius
+        self.animatedCircle2.layer.cornerRadius = alarmRadius
+        self.animatedCircle3.layer.cornerRadius = alarmRadius
+        self.animatedCircle4.layer.cornerRadius = alarmRadius
         
         //Circle BG colors
         self.animatedCircle1.layer.backgroundColor = circleColor.cgColor
