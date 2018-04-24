@@ -279,6 +279,11 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.86666666670000003" green="0.24313725489999999" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
+                                    <view alpha="0.0" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XGc-7g-934">
+                                        <rect key="frame" x="163" y="164" width="10" height="10"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.97254901959999995" green="0.46274509800000002" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="fnP-Mq-3Hj" firstAttribute="centerX" secondItem="JCo-tO-gFY" secondAttribute="centerX" id="Q9M-5t-66q"/>
@@ -307,6 +312,7 @@
                         <viewLayoutGuide key="safeArea" id="jPt-aT-zXD"/>
                     </view>
                     <connections>
+                        <outlet property="animatedOrangeCircle" destination="XGc-7g-934" id="RYC-rZ-kZy"/>
                         <outlet property="animatedPinkCircle" destination="IZG-pO-c13" id="ZaD-E6-8zj"/>
                         <outlet property="animatedPurpleCircle" destination="8kd-bh-pX4" id="ZW0-cQ-OJZ"/>
                         <outlet property="circleProgressBar" destination="fnP-Mq-3Hj" id="d7E-kR-iNs"/>
