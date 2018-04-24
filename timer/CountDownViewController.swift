@@ -42,13 +42,13 @@ class CountDownViewController: UIViewController {
     
     func animateAlarm() {
         let alarmOpacityAnimation = CAKeyframeAnimation(keyPath: "opacity")
-        alarmOpacityAnimation.duration = 5
+//        alarmOpacityAnimation.duration = 5
         alarmOpacityAnimation.repeatCount = Float.infinity
         alarmOpacityAnimation.keyTimes = [0, 1]
         alarmOpacityAnimation.values = [1, 0]
         
         let alarmScaleAnimation = CAKeyframeAnimation(keyPath: "transform.scale")
-        alarmScaleAnimation.duration = 5
+//        alarmScaleAnimation.duration = 5
         alarmScaleAnimation.repeatCount = Float.infinity
         alarmScaleAnimation.keyTimes = [0, 1]
         alarmScaleAnimation.values = [1, 30]
@@ -59,12 +59,19 @@ class CountDownViewController: UIViewController {
         alarmAnimations.beginTime = CACurrentMediaTime()
         alarmAnimations.animations = [alarmOpacityAnimation, alarmScaleAnimation]
         
+        let alarmPinkAnimations = CAAnimationGroup()
+        alarmPinkAnimations.duration = 5
+        alarmPinkAnimations.repeatCount = Float.infinity
+        alarmPinkAnimations.beginTime = CACurrentMediaTime()+1
+        alarmPinkAnimations.animations = [alarmOpacityAnimation, alarmScaleAnimation]
+        
         UIView.animate(
             withDuration: 1,
             delay: 0,
             options: [.curveLinear],
             animations: {
                 self.animatedPurpleCircle.layer.add(alarmAnimations, forKey: "opacity animation")
+                self.animatedPinkCircle.layer.add(alarmPinkAnimations, forKey: "opacity animation")
             }
         )
     }
