@@ -29,7 +29,7 @@ class CountDownViewController: UIViewController {
 
     @IBOutlet weak var animatedPurpleCircle: UIView!
     @IBOutlet weak var animatedPinkCircle: UIView!
-    @IBOutlet weak var animatedOrangeCircle: UIView!
+    @IBOutlet weak var animatedCircle3: UIView!
     @IBOutlet weak var animatedCircle4: UIView!
     
     @IBAction func stopTimer(_ sender: Any) {
@@ -67,11 +67,11 @@ class CountDownViewController: UIViewController {
         alarmPinkAnimations.beginTime = CACurrentMediaTime()+1
         alarmPinkAnimations.animations = [alarmOpacityAnimation, alarmScaleAnimation]
 
-        let alarmOrangeAnimations = CAAnimationGroup()
-        alarmOrangeAnimations.duration = 5
-        alarmOrangeAnimations.repeatCount = Float.infinity
-        alarmOrangeAnimations.beginTime = CACurrentMediaTime()+2
-        alarmOrangeAnimations.animations = [alarmOpacityAnimation, alarmScaleAnimation]
+        let alarmCircle3Animations = CAAnimationGroup()
+        alarmCircle3Animations.duration = 5
+        alarmCircle3Animations.repeatCount = Float.infinity
+        alarmCircle3Animations.beginTime = CACurrentMediaTime()+2
+        alarmCircle3Animations.animations = [alarmOpacityAnimation, alarmScaleAnimation]
 
         let alarmCircle4Animations = CAAnimationGroup()
         alarmCircle4Animations.duration = 5
@@ -86,7 +86,7 @@ class CountDownViewController: UIViewController {
             animations: {
                 self.animatedPurpleCircle.layer.add(alarmAnimations, forKey: "opacity animation")
                 self.animatedPinkCircle.layer.add(alarmPinkAnimations, forKey: "opacity animation")
-                self.animatedOrangeCircle.layer.add(alarmOrangeAnimations, forKey: "opacity animation")
+                self.animatedCircle3.layer.add(alarmCircle3Animations, forKey: "opacity animation")
                 self.animatedCircle4.layer.add(alarmCircle4Animations, forKey: "opacity animation")
             }
         )
@@ -133,10 +133,15 @@ class CountDownViewController: UIViewController {
         super.viewDidLoad()
         
         //alarm animated circles
+        
+        //Circle corner radius
         self.animatedPurpleCircle.layer.cornerRadius = self.animatedPurpleCircle.layer.bounds.size.width / 2
         self.animatedPinkCircle.layer.cornerRadius = self.animatedPinkCircle.layer.bounds.size.width / 2
-        self.animatedOrangeCircle.layer.cornerRadius = self.animatedOrangeCircle.layer.bounds.size.width / 2
+        self.animatedCircle3.layer.cornerRadius = self.animatedCircle3.layer.bounds.size.width / 2
         self.animatedCircle4.layer.cornerRadius = self.animatedCircle4.layer.bounds.size.width / 2
+        
+        //Circle BG colors
+        self.animatedCircle3.layer.backgroundColor = circleColor.cgColor
         self.animatedCircle4.layer.backgroundColor = circleColor.cgColor
 
         if let filePath = Bundle.main.path(forResource: "tick-tock", ofType: "wav", inDirectory: "") {
