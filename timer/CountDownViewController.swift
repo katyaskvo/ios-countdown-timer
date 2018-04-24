@@ -43,40 +43,40 @@ class CountDownViewController: UIViewController {
     }
     
     func animateAlarm() {
+        let alarmAnimationDuration = 2.0
+        
         let alarmOpacityAnimation = CAKeyframeAnimation(keyPath: "opacity")
-//        alarmOpacityAnimation.duration = 5
         alarmOpacityAnimation.repeatCount = Float.infinity
         alarmOpacityAnimation.keyTimes = [0, 1]
         alarmOpacityAnimation.values = [1, 0]
         
         let alarmScaleAnimation = CAKeyframeAnimation(keyPath: "transform.scale")
-//        alarmScaleAnimation.duration = 5
         alarmScaleAnimation.repeatCount = Float.infinity
         alarmScaleAnimation.keyTimes = [0, 1]
         alarmScaleAnimation.values = [1, 30]
         
         let alarmCircle1Animations = CAAnimationGroup()
-       alarmCircle1Animations.duration = 5
+       alarmCircle1Animations.duration = alarmAnimationDuration
         alarmCircle1Animations.repeatCount = Float.infinity
         alarmCircle1Animations.beginTime = CACurrentMediaTime()
         alarmCircle1Animations.animations = [alarmOpacityAnimation, alarmScaleAnimation]
         
         let alarmCircle2Animations = CAAnimationGroup()
-        alarmCircle2Animations.duration = 5
+        alarmCircle2Animations.duration = alarmAnimationDuration
         alarmCircle2Animations.repeatCount = Float.infinity
-        alarmCircle2Animations.beginTime = CACurrentMediaTime()+1
+        alarmCircle2Animations.beginTime = CACurrentMediaTime()+(alarmAnimationDuration*0.15)
         alarmCircle2Animations.animations = [alarmOpacityAnimation, alarmScaleAnimation]
 
         let alarmCircle3Animations = CAAnimationGroup()
-        alarmCircle3Animations.duration = 5
+        alarmCircle3Animations.duration = alarmAnimationDuration
         alarmCircle3Animations.repeatCount = Float.infinity
-        alarmCircle3Animations.beginTime = CACurrentMediaTime()+2
+        alarmCircle3Animations.beginTime = CACurrentMediaTime()+(alarmAnimationDuration*0.3)
         alarmCircle3Animations.animations = [alarmOpacityAnimation, alarmScaleAnimation]
 
         let alarmCircle4Animations = CAAnimationGroup()
-        alarmCircle4Animations.duration = 5
+        alarmCircle4Animations.duration = alarmAnimationDuration
         alarmCircle4Animations.repeatCount = Float.infinity
-        alarmCircle4Animations.beginTime = CACurrentMediaTime()+3
+        alarmCircle4Animations.beginTime = CACurrentMediaTime()+(alarmAnimationDuration*0.45)
         alarmCircle4Animations.animations = [alarmOpacityAnimation, alarmScaleAnimation]
 
         UIView.animate(
