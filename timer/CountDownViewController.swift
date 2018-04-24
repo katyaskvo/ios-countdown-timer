@@ -28,6 +28,7 @@ class CountDownViewController: UIViewController {
     var audioPlayerAlarm: AVAudioPlayer!
 
     @IBOutlet weak var animatedPurpleCircle: UIView!
+    @IBOutlet weak var animatedPinkCircle: UIView!
     
     @IBAction func stopTimer(_ sender: Any) {
         timer.invalidate()
@@ -107,8 +108,11 @@ class CountDownViewController: UIViewController {
 //
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.animatedPurpleCircle.layer.cornerRadius = self.animatedPurpleCircle.layer.bounds.size.width / 2
         
+        //alarm animated cicles
+        self.animatedPurpleCircle.layer.cornerRadius = self.animatedPurpleCircle.layer.bounds.size.width / 2
+        self.animatedPinkCircle.layer.cornerRadius = self.animatedPinkCircle.layer.bounds.size.width / 2
+
         if let filePath = Bundle.main.path(forResource: "tick-tock", ofType: "wav", inDirectory: "") {
             // Good, got a file
             let filePathUrl = NSURL.fileURL(withPath: filePath)
