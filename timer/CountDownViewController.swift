@@ -43,7 +43,7 @@ class CountDownViewController: UIViewController {
     }
     
     func animateAlarm() {
-        let alarmAnimationDuration = 2.0
+        let alarmAnimationDuration = 1.0
         
         let alarmOpacityAnimation = CAKeyframeAnimation(keyPath: "opacity")
         alarmOpacityAnimation.repeatCount = Float.infinity
@@ -93,11 +93,12 @@ class CountDownViewController: UIViewController {
     }
     @objc func updateTimer() {
         func updateProgress(_ progress: CGFloat, animated: Bool = true, initialDelay: CFTimeInterval = 0, duration: CFTimeInterval? = 10) {}
-        if numberOfSeconds < 1 {
+        if numberOfSeconds == 0 {
             timer.invalidate()
             self.audioPlayerTickTock.stop()
             self.audioPlayerAlarm.numberOfLoops = -1
-            self.audioPlayerAlarm.rate = 0.6
+            self.audioPlayerAlarm.enableRate = true
+            self.audioPlayerAlarm.rate = 1
             do {
                 try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
             }
@@ -195,13 +196,7 @@ class CountDownViewController: UIViewController {
         circleProgressBar.progressBarTrackColor = circleColor
         circleProgressBar.hintHidden = true
         circleProgressBar.setProgress(1.0, animated: true, duration: CGFloat(numberOfSeconds))
-        print(circleProgressBar.frame.size.width)
-        
-        // Do any additional setup after loading the view, typically from a nib.
     }
-    
-    
-    
 }
 
 
