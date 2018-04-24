@@ -27,7 +27,7 @@ class CountDownViewController: UIViewController {
     var audioPlayerTickTock: AVAudioPlayer!
     var audioPlayerAlarm: AVAudioPlayer!
 
-    @IBOutlet weak var animatedPurpleCircle: UIView!
+    @IBOutlet weak var animatedCircle1: UIView!
     @IBOutlet weak var animatedCircle2: UIView!
     @IBOutlet weak var animatedCircle3: UIView!
     @IBOutlet weak var animatedCircle4: UIView!
@@ -55,11 +55,11 @@ class CountDownViewController: UIViewController {
         alarmScaleAnimation.keyTimes = [0, 1]
         alarmScaleAnimation.values = [1, 30]
         
-        let alarmAnimations = CAAnimationGroup()
-        alarmAnimations.duration = 5
-        alarmAnimations.repeatCount = Float.infinity
-        alarmAnimations.beginTime = CACurrentMediaTime()
-        alarmAnimations.animations = [alarmOpacityAnimation, alarmScaleAnimation]
+        let alarmCircle1Animations = CAAnimationGroup()
+       alarmCircle1Animations.duration = 5
+        alarmCircle1Animations.repeatCount = Float.infinity
+        alarmCircle1Animations.beginTime = CACurrentMediaTime()
+        alarmCircle1Animations.animations = [alarmOpacityAnimation, alarmScaleAnimation]
         
         let alarmCircle2Animations = CAAnimationGroup()
         alarmCircle2Animations.duration = 5
@@ -84,7 +84,7 @@ class CountDownViewController: UIViewController {
             delay: 0,
             options: [.curveLinear],
             animations: {
-                self.animatedPurpleCircle.layer.add(alarmAnimations, forKey: "opacity animation")
+                self.animatedCircle1.layer.add(alarmCircle1Animations, forKey: "opacity animation")
                 self.animatedCircle2.layer.add(alarmCircle2Animations, forKey: "opacity animation")
                 self.animatedCircle3.layer.add(alarmCircle3Animations, forKey: "opacity animation")
                 self.animatedCircle4.layer.add(alarmCircle4Animations, forKey: "opacity animation")
@@ -135,12 +135,13 @@ class CountDownViewController: UIViewController {
         //alarm animated circles
         
         //Circle corner radius
-        self.animatedPurpleCircle.layer.cornerRadius = self.animatedPurpleCircle.layer.bounds.size.width / 2
+        self.animatedCircle1.layer.cornerRadius = self.animatedCircle1.layer.bounds.size.width / 2
         self.animatedCircle2.layer.cornerRadius = self.animatedCircle2.layer.bounds.size.width / 2
         self.animatedCircle3.layer.cornerRadius = self.animatedCircle3.layer.bounds.size.width / 2
         self.animatedCircle4.layer.cornerRadius = self.animatedCircle4.layer.bounds.size.width / 2
         
         //Circle BG colors
+        self.animatedCircle1.layer.backgroundColor = circleColor.cgColor
         self.animatedCircle2.layer.backgroundColor = circleColor.cgColor
         self.animatedCircle3.layer.backgroundColor = circleColor.cgColor
         self.animatedCircle4.layer.backgroundColor = circleColor.cgColor
