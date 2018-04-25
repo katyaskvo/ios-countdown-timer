@@ -528,7 +528,7 @@
 				DEVELOPMENT_TEAM = 7Y5A985M94;
 				INFOPLIST_FILE = timer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.katyaskvo.timer;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.katyaskvo.countdown-timer-for-kids";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -544,7 +544,7 @@
 				DEVELOPMENT_TEAM = 7Y5A985M94;
 				INFOPLIST_FILE = timer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.katyaskvo.timer;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.katyaskvo.countdown-timer-for-kids";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
