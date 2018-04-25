@@ -44,11 +44,12 @@ class TimerViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destVC : CountDownViewController = segue.destination as! CountDownViewController
+        let circleDecrement: CGFloat = 0.07
         
         // 1 min
         if (segue.identifier == "timer1min") {
             destVC.numberOfSeconds = 60
-            destVC.circleSize = 0.37
+            destVC.circleSize = 1 - 9 * circleDecrement
             destVC.circleColor = colorPurple
             destVC.runTimer()
         }
@@ -56,7 +57,7 @@ class TimerViewController: UIViewController {
         // 2 mins
         if (segue.identifier == "timer2mins") {
             destVC.numberOfSeconds = 120
-            destVC.circleSize = 0.44
+            destVC.circleSize = 1 - 8 * circleDecrement
             destVC.circleColor = colorPurple
             destVC.runTimer()
         }
@@ -64,7 +65,7 @@ class TimerViewController: UIViewController {
         // 3 mins
         if (segue.identifier == "timer3mins") {
             destVC.numberOfSeconds = 180
-            destVC.circleSize = 0.51
+            destVC.circleSize = 1 - 7 * circleDecrement
             destVC.circleColor = colorPink
             destVC.runTimer()
         }
@@ -72,7 +73,7 @@ class TimerViewController: UIViewController {
         // 4 mins
         if (segue.identifier == "timer4mins") {
             destVC.numberOfSeconds = 240
-            destVC.circleSize = 0.58
+            destVC.circleSize = 1 - 6 * circleDecrement
             destVC.circleColor = colorPink
             destVC.runTimer()
         }
@@ -80,7 +81,7 @@ class TimerViewController: UIViewController {
         // 5 mins
         if (segue.identifier == "timer5mins") {
             destVC.numberOfSeconds = 300
-            destVC.circleSize = 0.65
+            destVC.circleSize = 1 - 5 * circleDecrement
             destVC.circleColor = colorOrange
             destVC.runTimer()
         }
@@ -88,7 +89,7 @@ class TimerViewController: UIViewController {
         // 6 mins
         if (segue.identifier == "timer6mins") {
             destVC.numberOfSeconds = 360
-            destVC.circleSize = 0.72
+            destVC.circleSize = 1 - 4 * circleDecrement
             destVC.circleColor = colorOrange
             destVC.runTimer()
         }
@@ -96,7 +97,7 @@ class TimerViewController: UIViewController {
         // 7 mins
         if (segue.identifier == "timer7mins") {
             destVC.numberOfSeconds = 420
-            destVC.circleSize = 0.79
+            destVC.circleSize = 1 - 3 * circleDecrement
             destVC.circleColor = colorOrange
             destVC.runTimer()
         }
@@ -104,7 +105,7 @@ class TimerViewController: UIViewController {
         // 8 mins
         if (segue.identifier == "timer8mins") {
             destVC.numberOfSeconds = 480
-            destVC.circleSize = 0.86
+            destVC.circleSize = 1 - 2 * circleDecrement
             destVC.circleColor = colorYellow
             destVC.runTimer()
         }
@@ -112,7 +113,7 @@ class TimerViewController: UIViewController {
         // 9 mins
         if (segue.identifier == "timer9mins") {
             destVC.numberOfSeconds = 540
-            destVC.circleSize = 0.93
+            destVC.circleSize = 1 - circleDecrement
             destVC.circleColor = colorYellow
             destVC.runTimer()
         }
