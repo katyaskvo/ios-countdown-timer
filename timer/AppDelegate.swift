@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        application.isIdleTimerDisabled = true
+//        application.isIdleTimerDisabled = true //don't allow device to go to the sleep mode while app is running
         return true
     }
 

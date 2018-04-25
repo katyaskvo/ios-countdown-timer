@@ -37,26 +37,29 @@ class CountDownViewController: UIViewController {
         self.audioPlayerTickTock.stop()
         self.audioPlayerAlarm.stop()
     }
+    
     func runTimer() {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(CountDownViewController.updateTimer)), userInfo: nil, repeats: true)
         isTimerRunning = true
     }
     
     func animateAlarm() {
+        //pulsating circles animation displays when timer is done, the color of the circles is the same as timer's preset button
         let alarmAnimationDuration = 1.0
         
-        let alarmOpacityAnimation = CAKeyframeAnimation(keyPath: "opacity")
+        let alarmOpacityAnimation = CAKeyframeAnimation(keyPath: "opacity") //dissapearing cirles effect
         alarmOpacityAnimation.repeatCount = Float.infinity
         alarmOpacityAnimation.keyTimes = [0, 1]
         alarmOpacityAnimation.values = [1, 0]
         
-        let alarmScaleAnimation = CAKeyframeAnimation(keyPath: "transform.scale")
+        let alarmScaleAnimation = CAKeyframeAnimation(keyPath: "transform.scale") //pulsating effect
         alarmScaleAnimation.repeatCount = Float.infinity
         alarmScaleAnimation.keyTimes = [0, 1]
         alarmScaleAnimation.values = [1, 30]
         
+        //four circles appears each animation repetition
         let alarmCircle1Animations = CAAnimationGroup()
-       alarmCircle1Animations.duration = alarmAnimationDuration
+        alarmCircle1Animations.duration = alarmAnimationDuration
         alarmCircle1Animations.repeatCount = Float.infinity
         alarmCircle1Animations.beginTime = CACurrentMediaTime()
         alarmCircle1Animations.animations = [alarmOpacityAnimation, alarmScaleAnimation]
@@ -80,9 +83,9 @@ class CountDownViewController: UIViewController {
         alarmCircle4Animations.animations = [alarmOpacityAnimation, alarmScaleAnimation]
 
         UIView.animate(
-            withDuration: 1,
+            withDuration: alarmAnimationDuration,
             delay: 0,
-            options: [.curveLinear],
+            options: [.curveEaseInOut],
             animations: {
                 self.animatedCircle1.layer.add(alarmCircle1Animations, forKey: "opacity animation")
                 self.animatedCircle2.layer.add(alarmCircle2Animations, forKey: "opacity animation")
@@ -91,6 +94,7 @@ class CountDownViewController: UIViewController {
             }
         )
     }
+    
     @objc func updateTimer() {
         func updateProgress(_ progress: CGFloat, animated: Bool = true, initialDelay: CFTimeInterval = 0, duration: CFTimeInterval? = 10) {}
         if numberOfSeconds == 0 {
@@ -105,12 +109,14 @@ class CountDownViewController: UIViewController {
             catch {
                 // report for an error
             }
+            //time's up!
             self.audioPlayerAlarm.play()
             animateAlarm()
-            //Send alert to indicate "time's up!"
-        } else {
-            numberOfSeconds -= 1     //This will decrement(count down)the seconds.
             
+        } else {
+            numberOfSeconds -= 1     //decrement(count down)the seconds.
+            
+            //increase tick tock sound rate starting at 3mins, to let child know time is running out.
             if numberOfSeconds <= 30 {
                 self.audioPlayerTickTock.rate = 2
             } else if numberOfSeconds <= 60 {
@@ -132,11 +138,12 @@ class CountDownViewController: UIViewController {
 //
     override func viewDidLoad() {
         super.viewDidLoad()
+        UIApplication.shared.isIdleTimerDisabled = true //don't allow device to fall asleep while timer is running
         
-        //alarm animated circles
+        //alarm circles
         
-        //Circle corner radius
-        let alarmRadius = self.superView.layer.bounds.size.width * 0.027 / 2
+        //Circles corner radius
+        let alarmRadius = self.superView.layer.bounds.size.width * 0.027 / 2 //relative radius, because circles itself are relative to the screen size.
         self.animatedCircle1.layer.cornerRadius = alarmRadius
         self.animatedCircle2.layer.cornerRadius = alarmRadius
         self.animatedCircle3.layer.cornerRadius = alarmRadius
@@ -185,8 +192,11 @@ class CountDownViewController: UIViewController {
         catch {
             // report for an error
         }
+        
+        //play ticking sound
         self.audioPlayerTickTock.play()
         
+        //show dissapearing circle
         heightConstraint.constant = CGFloat(-(1 - circleSize) * superView.frame.size.width * 0.9)
         widthConstraint.constant = CGFloat(-(1 - circleSize) * superView.frame.size.width * 0.9)
         circleProgressBar.layoutIfNeeded()
@@ -197,6 +207,10 @@ class CountDownViewController: UIViewController {
         circleProgressBar.progressBarTrackColor = circleColor
         circleProgressBar.hintHidden = true
         circleProgressBar.setProgress(1.0, animated: true, duration: CGFloat(numberOfSeconds))
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        UIApplication.shared.isIdleTimerDisabled = false //allow device to fall asleep, when timer is turnned off
     }
 }
 

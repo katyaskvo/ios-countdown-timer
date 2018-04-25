@@ -30,14 +30,14 @@ class TimerViewController: UIViewController {
         let buttonUnit = superView.frame.size.height * 0.0435
         super.viewDidLoad()
         onebutton.cornerRadius = buttonUnit / 2
-        button2.cornerRadius = (buttonUnit * 1.1) / 2
-        button3.cornerRadius = (buttonUnit * 1.2) / 2
-        button4.cornerRadius = (buttonUnit * 1.3) / 2
-        button5.cornerRadius = (buttonUnit * 1.4) / 2
-        button6.cornerRadius = (buttonUnit * 1.5) / 2
-        button7.cornerRadius = (buttonUnit * 1.6) / 2
-        button8.cornerRadius = (buttonUnit * 1.7) / 2
-        button9.cornerRadius = (buttonUnit * 1.8) / 2
+        button2.cornerRadius  = (buttonUnit * 1.1) / 2
+        button3.cornerRadius  = (buttonUnit * 1.2) / 2
+        button4.cornerRadius  = (buttonUnit * 1.3) / 2
+        button5.cornerRadius  = (buttonUnit * 1.4) / 2
+        button6.cornerRadius  = (buttonUnit * 1.5) / 2
+        button7.cornerRadius  = (buttonUnit * 1.6) / 2
+        button8.cornerRadius  = (buttonUnit * 1.7) / 2
+        button9.cornerRadius  = (buttonUnit * 1.8) / 2
         button10.cornerRadius = (buttonUnit * 1.9) / 2
         // Do any additional setup after loading the view, typically from a nib.
     }
