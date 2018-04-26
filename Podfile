@@ -1,8 +1,8 @@
 platform :ios, '9.0'
 
-workspace 'timer'
+workspace 'countdown-timer-for-kids'
 
-target 'timer' do
+target 'countdown-timer-for-kids' do
   use_frameworks!
 
   # Pods for timer
