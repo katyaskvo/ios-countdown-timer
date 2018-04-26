@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_timerVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_timerVersionString[];
+FOUNDATION_EXPORT double Pods_countdown_timer_for_kidsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_countdown_timer_for_kidsVersionString[];
 
