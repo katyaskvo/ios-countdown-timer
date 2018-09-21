@@ -1,8 +1,8 @@
 platform :ios, '11.0'
 
-workspace 'countdown-timer-for-kids'
+workspace 'KidsTimer'
 
-target 'countdown-timer-for-kids' do
+target 'CountdownTimer' do
   use_frameworks!
 
   pod 'CircleProgressBar', '~> 0.32'

@@ -1,6 +1,0 @@
-framework module Pods_countdown_timer_for_kids {
-  umbrella header "Pods-countdown-timer-for-kids-umbrella.h"
-
-  export *
-  module * { export * }
-}

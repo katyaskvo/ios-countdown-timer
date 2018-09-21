@@ -16,12 +16,12 @@
 		0035B55420852911002D1671 /* tick-tock.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0035B55320852911002D1671 /* tick-tock.wav */; };
 		0051B661207F838200B56168 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0051B660207F838200B56168 /* RoundButton.swift */; };
 		00A39FA320741D270065A9B8 /* CountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A39FA220741D270065A9B8 /* CountDownViewController.swift */; };
-		2CE70FF2283BA9618E25C959 /* Pods_countdown_timer_for_kids.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB6C195CCD65C3A4BA72023 /* Pods_countdown_timer_for_kids.framework */; };
+		51B5D6FBF6379CD5B7D2A6E6 /* Pods_CountdownTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208FAC36663BFF84EFDFB7D8 /* Pods_CountdownTimer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		00200AAB208730EC00921697 /* alarm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alarm.wav; sourceTree = "<group>"; };
-		0030E4E9206D6FBF00921B09 /* countdown-timer-for-kids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "countdown-timer-for-kids.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0030E4E9206D6FBF00921B09 /* CountdownTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountdownTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0030E4EC206D6FBF00921B09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0030E4EE206D6FBF00921B09 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		0030E4F1206D6FBF00921B09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -31,12 +31,14 @@
 		0035B55320852911002D1671 /* tick-tock.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "tick-tock.wav"; sourceTree = "<group>"; };
 		0051B660207F838200B56168 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		00A39FA220741D270065A9B8 /* CountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownViewController.swift; sourceTree = "<group>"; };
+		208FAC36663BFF84EFDFB7D8 /* Pods_CountdownTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CountdownTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BFB5AED21558E99006A7A04 /* Gemfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Gemfile; sourceTree = SOURCE_ROOT; };
 		4BFB5AEE21558E99006A7A04 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = SOURCE_ROOT; };
 		4BFB5AEF21558E99006A7A04 /* Gemfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile.lock; sourceTree = SOURCE_ROOT; };
 		4BFB5AF021558E99006A7A04 /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = SOURCE_ROOT; };
-		5BB6C195CCD65C3A4BA72023 /* Pods_countdown_timer_for_kids.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_countdown_timer_for_kids.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F619D7FCDEA2B25B8A4F3F9 /* Pods-countdown-timer-for-kids.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-countdown-timer-for-kids.debug.xcconfig"; path = "Pods/Target Support Files/Pods-countdown-timer-for-kids/Pods-countdown-timer-for-kids.debug.xcconfig"; sourceTree = "<group>"; };
+		AB33BD386BCDAA7EE1F1DF1E /* Pods-CountdownTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountdownTimer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CountdownTimer/Pods-CountdownTimer.debug.xcconfig"; sourceTree = "<group>"; };
+		C4B4BCE948358BC1FCF70EF1 /* Pods-CountdownTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountdownTimer.release.xcconfig"; path = "Pods/Target Support Files/Pods-CountdownTimer/Pods-CountdownTimer.release.xcconfig"; sourceTree = "<group>"; };
 		E72AA310E40798FF8F779EC3 /* Pods-countdown-timer-for-kids.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-countdown-timer-for-kids.release.xcconfig"; path = "Pods/Target Support Files/Pods-countdown-timer-for-kids/Pods-countdown-timer-for-kids.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CE70FF2283BA9618E25C959 /* Pods_countdown_timer_for_kids.framework in Frameworks */,
+				51B5D6FBF6379CD5B7D2A6E6 /* Pods_CountdownTimer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,7 +57,7 @@
 		0030E4E0206D6FBF00921B09 = {
 			isa = PBXGroup;
 			children = (
-				0030E4EB206D6FBF00921B09 /* countdown-timer-for-kids */,
+				0030E4EB206D6FBF00921B09 /* Source */,
 				4BFB5AEC21558E81006A7A04 /* Supporting Files */,
 				0030E4EA206D6FBF00921B09 /* Products */,
 				7D4C91D3C3E949FE65236FF8 /* Pods */,
@@ -66,15 +68,15 @@
 		0030E4EA206D6FBF00921B09 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0030E4E9206D6FBF00921B09 /* countdown-timer-for-kids.app */,
+				0030E4E9206D6FBF00921B09 /* CountdownTimer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0030E4EB206D6FBF00921B09 /* countdown-timer-for-kids */ = {
+		0030E4EB206D6FBF00921B09 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				007DA742207C9DB4008D1AA6 /* sound_effects */,
+				007DA742207C9DB4008D1AA6 /* Sound Effects */,
 				0030E4EC206D6FBF00921B09 /* AppDelegate.swift */,
 				0030E4EE206D6FBF00921B09 /* TimerViewController.swift */,
 				0030E4F0206D6FBF00921B09 /* Main.storyboard */,
@@ -84,16 +86,16 @@
 				00A39FA220741D270065A9B8 /* CountDownViewController.swift */,
 				0051B660207F838200B56168 /* RoundButton.swift */,
 			);
-			path = "countdown-timer-for-kids";
+			path = Source;
 			sourceTree = "<group>";
 		};
-		007DA742207C9DB4008D1AA6 /* sound_effects */ = {
+		007DA742207C9DB4008D1AA6 /* Sound Effects */ = {
 			isa = PBXGroup;
 			children = (
 				0035B55320852911002D1671 /* tick-tock.wav */,
 				00200AAB208730EC00921697 /* alarm.wav */,
 			);
-			path = sound_effects;
+			path = "Sound Effects";
 			sourceTree = "<group>";
 		};
 		4BFB5AEC21558E81006A7A04 /* Supporting Files */ = {
@@ -112,6 +114,8 @@
 			children = (
 				6F619D7FCDEA2B25B8A4F3F9 /* Pods-countdown-timer-for-kids.debug.xcconfig */,
 				E72AA310E40798FF8F779EC3 /* Pods-countdown-timer-for-kids.release.xcconfig */,
+				AB33BD386BCDAA7EE1F1DF1E /* Pods-CountdownTimer.debug.xcconfig */,
+				C4B4BCE948358BC1FCF70EF1 /* Pods-CountdownTimer.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -119,7 +123,7 @@
 		9B6311453B423C18DBE0F33B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5BB6C195CCD65C3A4BA72023 /* Pods_countdown_timer_for_kids.framework */,
+				208FAC36663BFF84EFDFB7D8 /* Pods_CountdownTimer.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -127,9 +131,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0030E4E8206D6FBF00921B09 /* countdown-timer-for-kids */ = {
+		0030E4E8206D6FBF00921B09 /* CountdownTimer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0030E511206D6FBF00921B09 /* Build configuration list for PBXNativeTarget "countdown-timer-for-kids" */;
+			buildConfigurationList = 0030E511206D6FBF00921B09 /* Build configuration list for PBXNativeTarget "CountdownTimer" */;
 			buildPhases = (
 				E4A3635DFBC486B930FD09D5 /* [CP] Check Pods Manifest.lock */,
 				0030E4E5206D6FBF00921B09 /* Sources */,
@@ -141,9 +145,9 @@
 			);
 			dependencies = (
 			);
-			name = "countdown-timer-for-kids";
+			name = CountdownTimer;
 			productName = timer;
-			productReference = 0030E4E9206D6FBF00921B09 /* countdown-timer-for-kids.app */;
+			productReference = 0030E4E9206D6FBF00921B09 /* CountdownTimer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -162,7 +166,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0030E4E4206D6FBF00921B09 /* Build configuration list for PBXProject "countdown-timer-for-kids" */;
+			buildConfigurationList = 0030E4E4206D6FBF00921B09 /* Build configuration list for PBXProject "KidsTimer" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -175,7 +179,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0030E4E8206D6FBF00921B09 /* countdown-timer-for-kids */,
+				0030E4E8206D6FBF00921B09 /* CountdownTimer */,
 			);
 		};
 /* End PBXProject section */
@@ -202,7 +206,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-countdown-timer-for-kids/Pods-countdown-timer-for-kids-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-CountdownTimer/Pods-CountdownTimer-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CircleProgressBar/CircleProgressBar.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -211,7 +215,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-countdown-timer-for-kids/Pods-countdown-timer-for-kids-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CountdownTimer/Pods-CountdownTimer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E4A3635DFBC486B930FD09D5 /* [CP] Check Pods Manifest.lock */ = {
@@ -225,7 +229,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-countdown-timer-for-kids-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CountdownTimer-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -381,15 +385,15 @@
 		};
 		0030E512206D6FBF00921B09 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F619D7FCDEA2B25B8A4F3F9 /* Pods-countdown-timer-for-kids.debug.xcconfig */;
+			baseConfigurationReference = AB33BD386BCDAA7EE1F1DF1E /* Pods-CountdownTimer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Y5A985M94;
-				INFOPLIST_FILE = "countdown-timer-for-kids/Info.plist";
+				INFOPLIST_FILE = Source/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.katyaskvo.countdown-timer-for-kids";
+				PRODUCT_BUNDLE_IDENTIFIER = com.katyaskvo.KidsTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -398,15 +402,15 @@
 		};
 		0030E513206D6FBF00921B09 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E72AA310E40798FF8F779EC3 /* Pods-countdown-timer-for-kids.release.xcconfig */;
+			baseConfigurationReference = C4B4BCE948358BC1FCF70EF1 /* Pods-CountdownTimer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Y5A985M94;
-				INFOPLIST_FILE = "countdown-timer-for-kids/Info.plist";
+				INFOPLIST_FILE = Source/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.katyaskvo.countdown-timer-for-kids";
+				PRODUCT_BUNDLE_IDENTIFIER = com.katyaskvo.KidsTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -416,7 +420,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0030E4E4206D6FBF00921B09 /* Build configuration list for PBXProject "countdown-timer-for-kids" */ = {
+		0030E4E4206D6FBF00921B09 /* Build configuration list for PBXProject "KidsTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0030E50F206D6FBF00921B09 /* Debug */,
@@ -425,7 +429,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0030E511206D6FBF00921B09 /* Build configuration list for PBXNativeTarget "countdown-timer-for-kids" */ = {
+		0030E511206D6FBF00921B09 /* Build configuration list for PBXNativeTarget "CountdownTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0030E512206D6FBF00921B09 /* Debug */,
