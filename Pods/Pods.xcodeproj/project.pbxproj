@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -46,11 +46,11 @@
 		904999DF290220F05C3CB9246B83B93A /* Pods-countdown-timer-for-kids.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-countdown-timer-for-kids.debug.xcconfig"; sourceTree = "<group>"; };
 		92CFAAA6D2596480E0B4BCDB0075971F /* Pods-countdown-timer-for-kids-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-countdown-timer-for-kids-resources.sh"; sourceTree = "<group>"; };
 		9362302B15F92F378B7CCEDBEF2FF49D /* Pods-countdown-timer-for-kids.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-countdown-timer-for-kids.modulemap"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; };
 		A1535B621BA60092F2EBE0D6395EA8B1 /* Pods-countdown-timer-for-kids-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-countdown-timer-for-kids-umbrella.h"; sourceTree = "<group>"; };
-		A2051FB824793F99F4111F62299B5CE1 /* CircleProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CircleProgressBar.framework; path = CircleProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2051FB824793F99F4111F62299B5CE1 /* CircleProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CircleProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC5495869A71579C7A135A6480953D8F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BF2F85156706531EF2E84E84954042E7 /* Pods_countdown_timer_for_kids.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_countdown_timer_for_kids.framework; path = "Pods-countdown-timer-for-kids.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF2F85156706531EF2E84E84954042E7 /* Pods_countdown_timer_for_kids.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_countdown_timer_for_kids.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E74A2AD6E5B3C0B37979C33FF95E245B /* Pods-countdown-timer-for-kids-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-countdown-timer-for-kids-frameworks.sh"; sourceTree = "<group>"; };
 		F4D301BE1EA87284963FC2AF959E0570 /* CircleProgressBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CircleProgressBar.xcconfig; sourceTree = "<group>"; };
 		FB7751D4D791D1183FB66D3CCA52CD8E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -124,7 +124,6 @@
 				48B0E9A08F6734E3A5994BCE39B0C4B5 /* CircleProgressBar.m */,
 				10DA0906A68DC19C6E80CA6DD2AA2F3C /* Support Files */,
 			);
-			name = CircleProgressBar;
 			path = CircleProgressBar;
 			sourceTree = "<group>";
 		};

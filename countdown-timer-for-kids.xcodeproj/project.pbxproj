@@ -56,6 +56,10 @@
 		0035B55320852911002D1671 /* tick-tock.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "tick-tock.wav"; sourceTree = "<group>"; };
 		0051B660207F838200B56168 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		00A39FA220741D270065A9B8 /* CountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownViewController.swift; sourceTree = "<group>"; };
+		4BFB5AED21558E99006A7A04 /* Gemfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Gemfile; sourceTree = SOURCE_ROOT; };
+		4BFB5AEE21558E99006A7A04 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		4BFB5AEF21558E99006A7A04 /* Gemfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile.lock; sourceTree = SOURCE_ROOT; };
+		4BFB5AF021558E99006A7A04 /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = SOURCE_ROOT; };
 		5BB6C195CCD65C3A4BA72023 /* Pods_countdown_timer_for_kids.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_countdown_timer_for_kids.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F619D7FCDEA2B25B8A4F3F9 /* Pods-countdown-timer-for-kids.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-countdown-timer-for-kids.debug.xcconfig"; path = "Pods/Target Support Files/Pods-countdown-timer-for-kids/Pods-countdown-timer-for-kids.debug.xcconfig"; sourceTree = "<group>"; };
 		9B24EF4E532BE09C18B45DB8 /* Pods_timerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_timerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +97,7 @@
 		0030E4E0206D6FBF00921B09 = {
 			isa = PBXGroup;
 			children = (
+				4BFB5AEC21558E81006A7A04 /* Supporting Files */,
 				0030E4EB206D6FBF00921B09 /* countdown-timer-for-kids */,
 				0030E500206D6FBF00921B09 /* timerTests */,
 				0030E50B206D6FBF00921B09 /* timerUITests */,
@@ -155,6 +160,17 @@
 				00200AAB208730EC00921697 /* alarm.wav */,
 			);
 			path = sound_effects;
+			sourceTree = "<group>";
+		};
+		4BFB5AEC21558E81006A7A04 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BFB5AED21558E99006A7A04 /* Gemfile */,
+				4BFB5AEF21558E99006A7A04 /* Gemfile.lock */,
+				4BFB5AEE21558E99006A7A04 /* Podfile */,
+				4BFB5AF021558E99006A7A04 /* Podfile.lock */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		7D4C91D3C3E949FE65236FF8 /* Pods */ = {
