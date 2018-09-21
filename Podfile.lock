@@ -1,16 +1,24 @@
 PODS:
   - CircleProgressBar (0.32)
+  - Nimble (7.3.1)
+  - Quick (1.3.2)
 
 DEPENDENCIES:
   - CircleProgressBar (~> 0.32)
+  - Nimble
+  - Quick
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - CircleProgressBar
+    - Nimble
+    - Quick
 
 SPEC CHECKSUMS:
   CircleProgressBar: 3920079be5224b62b3d9ed6eeb23ac01c835b681
+  Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
+  Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
 
-PODFILE CHECKSUM: ee6212e46b93d317c0fc74fba86af50066360f43
+PODFILE CHECKSUM: 3c18198c69f6cbcd3d95d5bb451898df45b6f706
 
 COCOAPODS: 1.5.3

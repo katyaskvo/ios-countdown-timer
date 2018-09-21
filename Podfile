@@ -12,3 +12,7 @@ def testing_pods
     pod 'Quick'
     pod 'Nimble'
 end
+
+target 'UnitSpecs' do
+    testing_pods
+end

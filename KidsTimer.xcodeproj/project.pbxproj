@@ -18,6 +18,7 @@
 		00A39FA320741D270065A9B8 /* CountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A39FA220741D270065A9B8 /* CountDownViewController.swift */; };
 		4B8555C42155A47000BFB6CF /* UnitSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8555C32155A47000BFB6CF /* UnitSpecs.swift */; };
 		51B5D6FBF6379CD5B7D2A6E6 /* Pods_CountdownTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208FAC36663BFF84EFDFB7D8 /* Pods_CountdownTimer.framework */; };
+		609CFD41B24E78750AFBCD60 /* libPods-UnitSpecs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9141880C74D0A502546C53D3 /* libPods-UnitSpecs.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		0051B660207F838200B56168 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		00A39FA220741D270065A9B8 /* CountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownViewController.swift; sourceTree = "<group>"; };
 		208FAC36663BFF84EFDFB7D8 /* Pods_CountdownTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CountdownTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		216F2DF7E1A353F5E4677769 /* Pods-UnitSpecs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitSpecs.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnitSpecs/Pods-UnitSpecs.release.xcconfig"; sourceTree = "<group>"; };
 		4B8555C12155A47000BFB6CF /* UnitSpecs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitSpecs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B8555C32155A47000BFB6CF /* UnitSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitSpecs.swift; sourceTree = "<group>"; };
 		4B8555C52155A47000BFB6CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		4BFB5AEF21558E99006A7A04 /* Gemfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile.lock; sourceTree = SOURCE_ROOT; };
 		4BFB5AF021558E99006A7A04 /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = SOURCE_ROOT; };
 		6F619D7FCDEA2B25B8A4F3F9 /* Pods-countdown-timer-for-kids.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-countdown-timer-for-kids.debug.xcconfig"; path = "Pods/Target Support Files/Pods-countdown-timer-for-kids/Pods-countdown-timer-for-kids.debug.xcconfig"; sourceTree = "<group>"; };
+		7CA5D720CB721849B0C4FF45 /* Pods-UnitSpecs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitSpecs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnitSpecs/Pods-UnitSpecs.debug.xcconfig"; sourceTree = "<group>"; };
+		9141880C74D0A502546C53D3 /* libPods-UnitSpecs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UnitSpecs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB33BD386BCDAA7EE1F1DF1E /* Pods-CountdownTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountdownTimer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CountdownTimer/Pods-CountdownTimer.debug.xcconfig"; sourceTree = "<group>"; };
 		C4B4BCE948358BC1FCF70EF1 /* Pods-CountdownTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountdownTimer.release.xcconfig"; path = "Pods/Target Support Files/Pods-CountdownTimer/Pods-CountdownTimer.release.xcconfig"; sourceTree = "<group>"; };
 		E72AA310E40798FF8F779EC3 /* Pods-countdown-timer-for-kids.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-countdown-timer-for-kids.release.xcconfig"; path = "Pods/Target Support Files/Pods-countdown-timer-for-kids/Pods-countdown-timer-for-kids.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				609CFD41B24E78750AFBCD60 /* libPods-UnitSpecs.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +153,8 @@
 				E72AA310E40798FF8F779EC3 /* Pods-countdown-timer-for-kids.release.xcconfig */,
 				AB33BD386BCDAA7EE1F1DF1E /* Pods-CountdownTimer.debug.xcconfig */,
 				C4B4BCE948358BC1FCF70EF1 /* Pods-CountdownTimer.release.xcconfig */,
+				7CA5D720CB721849B0C4FF45 /* Pods-UnitSpecs.debug.xcconfig */,
+				216F2DF7E1A353F5E4677769 /* Pods-UnitSpecs.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -156,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				208FAC36663BFF84EFDFB7D8 /* Pods_CountdownTimer.framework */,
+				9141880C74D0A502546C53D3 /* libPods-UnitSpecs.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -186,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B8555C82155A47000BFB6CF /* Build configuration list for PBXNativeTarget "UnitSpecs" */;
 			buildPhases = (
+				FAF8EA42CEBA2D248F150623 /* [CP] Check Pods Manifest.lock */,
 				4B8555BD2155A47000BFB6CF /* Sources */,
 				4B8555BE2155A47000BFB6CF /* Frameworks */,
 				4B8555BF2155A47000BFB6CF /* Resources */,
@@ -294,6 +303,28 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-CountdownTimer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAF8EA42CEBA2D248F150623 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UnitSpecs-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -499,12 +530,12 @@
 		};
 		4B8555C92155A47000BFB6CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CA5D720CB721849B0C4FF45 /* Pods-UnitSpecs.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UnitSpecs/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -518,12 +549,12 @@
 		};
 		4B8555CA2155A47000BFB6CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 216F2DF7E1A353F5E4677769 /* Pods-UnitSpecs.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UnitSpecs/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.katyaskvo.UnitSpecs;
