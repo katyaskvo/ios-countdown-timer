@@ -16,3 +16,7 @@ end
 target 'UnitSpecs' do
     testing_pods
 end
+
+target 'UITests' do
+    testing_pods
+end

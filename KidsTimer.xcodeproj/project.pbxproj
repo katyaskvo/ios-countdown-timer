@@ -17,12 +17,21 @@
 		0051B661207F838200B56168 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0051B660207F838200B56168 /* RoundButton.swift */; };
 		00A39FA320741D270065A9B8 /* CountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A39FA220741D270065A9B8 /* CountDownViewController.swift */; };
 		4B8555CC2155A7BA00BFB6CF /* ExampleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8555CB2155A7BA00BFB6CF /* ExampleSpec.swift */; };
+		4B8555D42155AAF300BFB6CF /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8555D32155AAF300BFB6CF /* UITests.swift */; };
 		51B5D6FBF6379CD5B7D2A6E6 /* Pods_CountdownTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208FAC36663BFF84EFDFB7D8 /* Pods_CountdownTimer.framework */; };
 		609CFD41B24E78750AFBCD60 /* libPods-UnitSpecs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9141880C74D0A502546C53D3 /* libPods-UnitSpecs.a */; };
+		93B22BDF39D4C4E89A69AABD /* libPods-UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C33DFF3E0DE8B39FCB32945 /* libPods-UITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		4B8555C62155A47000BFB6CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0030E4E1206D6FBF00921B09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0030E4E8206D6FBF00921B09;
+			remoteInfo = CountdownTimer;
+		};
+		4B8555D62155AAF300BFB6CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0030E4E1206D6FBF00921B09 /* Project object */;
 			proxyType = 1;
@@ -43,11 +52,15 @@
 		0035B55320852911002D1671 /* tick-tock.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "tick-tock.wav"; sourceTree = "<group>"; };
 		0051B660207F838200B56168 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		00A39FA220741D270065A9B8 /* CountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownViewController.swift; sourceTree = "<group>"; };
+		1C33DFF3E0DE8B39FCB32945 /* libPods-UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		208FAC36663BFF84EFDFB7D8 /* Pods_CountdownTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CountdownTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		216F2DF7E1A353F5E4677769 /* Pods-UnitSpecs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitSpecs.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnitSpecs/Pods-UnitSpecs.release.xcconfig"; sourceTree = "<group>"; };
 		4B8555C12155A47000BFB6CF /* UnitSpecs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitSpecs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B8555C52155A47000BFB6CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B8555CB2155A7BA00BFB6CF /* ExampleSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSpec.swift; sourceTree = "<group>"; };
+		4B8555D12155AAF300BFB6CF /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B8555D32155AAF300BFB6CF /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
+		4B8555D52155AAF300BFB6CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BFB5AED21558E99006A7A04 /* Gemfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Gemfile; sourceTree = SOURCE_ROOT; };
 		4BFB5AEE21558E99006A7A04 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = SOURCE_ROOT; };
 		4BFB5AEF21558E99006A7A04 /* Gemfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile.lock; sourceTree = SOURCE_ROOT; };
@@ -57,7 +70,9 @@
 		9141880C74D0A502546C53D3 /* libPods-UnitSpecs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UnitSpecs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB33BD386BCDAA7EE1F1DF1E /* Pods-CountdownTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountdownTimer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CountdownTimer/Pods-CountdownTimer.debug.xcconfig"; sourceTree = "<group>"; };
 		C4B4BCE948358BC1FCF70EF1 /* Pods-CountdownTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountdownTimer.release.xcconfig"; path = "Pods/Target Support Files/Pods-CountdownTimer/Pods-CountdownTimer.release.xcconfig"; sourceTree = "<group>"; };
+		CA07546F53019486EA4E4440 /* Pods-UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UITests/Pods-UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E72AA310E40798FF8F779EC3 /* Pods-countdown-timer-for-kids.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-countdown-timer-for-kids.release.xcconfig"; path = "Pods/Target Support Files/Pods-countdown-timer-for-kids/Pods-countdown-timer-for-kids.release.xcconfig"; sourceTree = "<group>"; };
+		E7CC71F1733F2EFDCB2943C7 /* Pods-UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITests/Pods-UITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +92,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4B8555CE2155AAF300BFB6CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93B22BDF39D4C4E89A69AABD /* libPods-UITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -86,6 +109,7 @@
 				0030E4EB206D6FBF00921B09 /* Source */,
 				4BFB5AEC21558E81006A7A04 /* Supporting Files */,
 				4B8555C22155A47000BFB6CF /* UnitSpecs */,
+				4B8555D22155AAF300BFB6CF /* UITests */,
 				0030E4EA206D6FBF00921B09 /* Products */,
 				7D4C91D3C3E949FE65236FF8 /* Pods */,
 				9B6311453B423C18DBE0F33B /* Frameworks */,
@@ -97,6 +121,7 @@
 			children = (
 				0030E4E9206D6FBF00921B09 /* CountdownTimer.app */,
 				4B8555C12155A47000BFB6CF /* UnitSpecs.xctest */,
+				4B8555D12155AAF300BFB6CF /* UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,6 +160,15 @@
 			path = UnitSpecs;
 			sourceTree = "<group>";
 		};
+		4B8555D22155AAF300BFB6CF /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				4B8555D32155AAF300BFB6CF /* UITests.swift */,
+				4B8555D52155AAF300BFB6CF /* Info.plist */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
 		4BFB5AEC21558E81006A7A04 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +189,8 @@
 				C4B4BCE948358BC1FCF70EF1 /* Pods-CountdownTimer.release.xcconfig */,
 				7CA5D720CB721849B0C4FF45 /* Pods-UnitSpecs.debug.xcconfig */,
 				216F2DF7E1A353F5E4677769 /* Pods-UnitSpecs.release.xcconfig */,
+				CA07546F53019486EA4E4440 /* Pods-UITests.debug.xcconfig */,
+				E7CC71F1733F2EFDCB2943C7 /* Pods-UITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -164,6 +200,7 @@
 			children = (
 				208FAC36663BFF84EFDFB7D8 /* Pods_CountdownTimer.framework */,
 				9141880C74D0A502546C53D3 /* libPods-UnitSpecs.a */,
+				1C33DFF3E0DE8B39FCB32945 /* libPods-UITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -209,6 +246,25 @@
 			productReference = 4B8555C12155A47000BFB6CF /* UnitSpecs.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		4B8555D02155AAF300BFB6CF /* UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B8555D82155AAF300BFB6CF /* Build configuration list for PBXNativeTarget "UITests" */;
+			buildPhases = (
+				5AB8BE7D621AA5BCB75713D6 /* [CP] Check Pods Manifest.lock */,
+				4B8555CD2155AAF300BFB6CF /* Sources */,
+				4B8555CE2155AAF300BFB6CF /* Frameworks */,
+				4B8555CF2155AAF300BFB6CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B8555D72155AAF300BFB6CF /* PBXTargetDependency */,
+			);
+			name = UITests;
+			productName = UITests;
+			productReference = 4B8555D12155AAF300BFB6CF /* UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -230,6 +286,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0030E4E8206D6FBF00921B09;
 					};
+					4B8555D02155AAF300BFB6CF = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0030E4E8206D6FBF00921B09;
+					};
 				};
 			};
 			buildConfigurationList = 0030E4E4206D6FBF00921B09 /* Build configuration list for PBXProject "KidsTimer" */;
@@ -247,6 +308,7 @@
 			targets = (
 				0030E4E8206D6FBF00921B09 /* CountdownTimer */,
 				4B8555C02155A47000BFB6CF /* UnitSpecs */,
+				4B8555D02155AAF300BFB6CF /* UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -271,9 +333,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4B8555CF2155AAF300BFB6CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5AB8BE7D621AA5BCB75713D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D641ED07025B1F6C8EC7651A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -354,6 +445,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4B8555CD2155AAF300BFB6CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B8555D42155AAF300BFB6CF /* UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -361,6 +460,11 @@
 			isa = PBXTargetDependency;
 			target = 0030E4E8206D6FBF00921B09 /* CountdownTimer */;
 			targetProxy = 4B8555C62155A47000BFB6CF /* PBXContainerItemProxy */;
+		};
+		4B8555D72155AAF300BFB6CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0030E4E8206D6FBF00921B09 /* CountdownTimer */;
+			targetProxy = 4B8555D62155AAF300BFB6CF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -569,6 +673,43 @@
 			};
 			name = Release;
 		};
+		4B8555D92155AAF300BFB6CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA07546F53019486EA4E4440 /* Pods-UITests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.katyaskvo.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CountdownTimer;
+			};
+			name = Debug;
+		};
+		4B8555DA2155AAF300BFB6CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7CC71F1733F2EFDCB2943C7 /* Pods-UITests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.katyaskvo.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CountdownTimer;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -595,6 +736,15 @@
 			buildConfigurations = (
 				4B8555C92155A47000BFB6CF /* Debug */,
 				4B8555CA2155A47000BFB6CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B8555D82155AAF300BFB6CF /* Build configuration list for PBXNativeTarget "UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B8555D92155AAF300BFB6CF /* Debug */,
+				4B8555DA2155AAF300BFB6CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
