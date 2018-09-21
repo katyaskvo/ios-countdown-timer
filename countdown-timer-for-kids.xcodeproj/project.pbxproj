@@ -13,30 +13,11 @@
 		0030E4F2206D6FBF00921B09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0030E4F0206D6FBF00921B09 /* Main.storyboard */; };
 		0030E4F4206D6FBF00921B09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0030E4F3206D6FBF00921B09 /* Assets.xcassets */; };
 		0030E4F7206D6FBF00921B09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0030E4F5206D6FBF00921B09 /* LaunchScreen.storyboard */; };
-		0030E502206D6FBF00921B09 /* timerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0030E501206D6FBF00921B09 /* timerTests.swift */; };
-		0030E50D206D6FBF00921B09 /* timerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0030E50C206D6FBF00921B09 /* timerUITests.swift */; };
 		0035B55420852911002D1671 /* tick-tock.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0035B55320852911002D1671 /* tick-tock.wav */; };
 		0051B661207F838200B56168 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0051B660207F838200B56168 /* RoundButton.swift */; };
 		00A39FA320741D270065A9B8 /* CountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A39FA220741D270065A9B8 /* CountDownViewController.swift */; };
 		2CE70FF2283BA9618E25C959 /* Pods_countdown_timer_for_kids.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB6C195CCD65C3A4BA72023 /* Pods_countdown_timer_for_kids.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		0030E4FE206D6FBF00921B09 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0030E4E1206D6FBF00921B09 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0030E4E8206D6FBF00921B09;
-			remoteInfo = timer;
-		};
-		0030E509206D6FBF00921B09 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0030E4E1206D6FBF00921B09 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0030E4E8206D6FBF00921B09;
-			remoteInfo = timer;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00200AAB208730EC00921697 /* alarm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alarm.wav; sourceTree = "<group>"; };
@@ -47,12 +28,6 @@
 		0030E4F3206D6FBF00921B09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0030E4F6206D6FBF00921B09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0030E4F8206D6FBF00921B09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0030E4FD206D6FBF00921B09 /* countdown-timer-for-kidsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "countdown-timer-for-kidsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0030E501206D6FBF00921B09 /* timerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerTests.swift; sourceTree = "<group>"; };
-		0030E503206D6FBF00921B09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0030E508206D6FBF00921B09 /* countdown-timer-for-kidsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "countdown-timer-for-kidsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0030E50C206D6FBF00921B09 /* timerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerUITests.swift; sourceTree = "<group>"; };
-		0030E50E206D6FBF00921B09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0035B55320852911002D1671 /* tick-tock.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "tick-tock.wav"; sourceTree = "<group>"; };
 		0051B660207F838200B56168 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		00A39FA220741D270065A9B8 /* CountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownViewController.swift; sourceTree = "<group>"; };
@@ -77,30 +52,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0030E4FA206D6FBF00921B09 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0030E505206D6FBF00921B09 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		0030E4E0206D6FBF00921B09 = {
 			isa = PBXGroup;
 			children = (
-				4BFB5AEC21558E81006A7A04 /* Supporting Files */,
 				0030E4EB206D6FBF00921B09 /* countdown-timer-for-kids */,
-				0030E500206D6FBF00921B09 /* timerTests */,
-				0030E50B206D6FBF00921B09 /* timerUITests */,
+				4BFB5AEC21558E81006A7A04 /* Supporting Files */,
 				0030E4EA206D6FBF00921B09 /* Products */,
 				7D4C91D3C3E949FE65236FF8 /* Pods */,
 				9B6311453B423C18DBE0F33B /* Frameworks */,
@@ -111,8 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				0030E4E9206D6FBF00921B09 /* countdown-timer-for-kids.app */,
-				0030E4FD206D6FBF00921B09 /* countdown-timer-for-kidsTests.xctest */,
-				0030E508206D6FBF00921B09 /* countdown-timer-for-kidsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,26 +88,6 @@
 				0051B660207F838200B56168 /* RoundButton.swift */,
 			);
 			path = "countdown-timer-for-kids";
-			sourceTree = "<group>";
-		};
-		0030E500206D6FBF00921B09 /* timerTests */ = {
-			isa = PBXGroup;
-			children = (
-				0030E501206D6FBF00921B09 /* timerTests.swift */,
-				0030E503206D6FBF00921B09 /* Info.plist */,
-			);
-			name = timerTests;
-			path = "countdown-timer-for-kidsTests";
-			sourceTree = "<group>";
-		};
-		0030E50B206D6FBF00921B09 /* timerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0030E50C206D6FBF00921B09 /* timerUITests.swift */,
-				0030E50E206D6FBF00921B09 /* Info.plist */,
-			);
-			name = timerUITests;
-			path = "countdown-timer-for-kidsUITests";
 			sourceTree = "<group>";
 		};
 		007DA742207C9DB4008D1AA6 /* sound_effects */ = {
@@ -215,42 +152,6 @@
 			productReference = 0030E4E9206D6FBF00921B09 /* countdown-timer-for-kids.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0030E4FC206D6FBF00921B09 /* countdown-timer-for-kidsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0030E514206D6FBF00921B09 /* Build configuration list for PBXNativeTarget "countdown-timer-for-kidsTests" */;
-			buildPhases = (
-				0030E4F9206D6FBF00921B09 /* Sources */,
-				0030E4FA206D6FBF00921B09 /* Frameworks */,
-				0030E4FB206D6FBF00921B09 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0030E4FF206D6FBF00921B09 /* PBXTargetDependency */,
-			);
-			name = "countdown-timer-for-kidsTests";
-			productName = timerTests;
-			productReference = 0030E4FD206D6FBF00921B09 /* countdown-timer-for-kidsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		0030E507206D6FBF00921B09 /* countdown-timer-for-kidsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0030E517206D6FBF00921B09 /* Build configuration list for PBXNativeTarget "countdown-timer-for-kidsUITests" */;
-			buildPhases = (
-				0030E504206D6FBF00921B09 /* Sources */,
-				0030E505206D6FBF00921B09 /* Frameworks */,
-				0030E506206D6FBF00921B09 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0030E50A206D6FBF00921B09 /* PBXTargetDependency */,
-			);
-			name = "countdown-timer-for-kidsUITests";
-			productName = timerUITests;
-			productReference = 0030E508206D6FBF00921B09 /* countdown-timer-for-kidsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -264,16 +165,6 @@
 					0030E4E8206D6FBF00921B09 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
-					};
-					0030E4FC206D6FBF00921B09 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 0030E4E8206D6FBF00921B09;
-					};
-					0030E507206D6FBF00921B09 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 0030E4E8206D6FBF00921B09;
 					};
 				};
 			};
@@ -291,8 +182,6 @@
 			projectRoot = "";
 			targets = (
 				0030E4E8206D6FBF00921B09 /* countdown-timer-for-kids */,
-				0030E4FC206D6FBF00921B09 /* countdown-timer-for-kidsTests */,
-				0030E507206D6FBF00921B09 /* countdown-timer-for-kidsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -307,20 +196,6 @@
 				00200AAC208730EC00921697 /* alarm.wav in Resources */,
 				0030E4F4206D6FBF00921B09 /* Assets.xcassets in Resources */,
 				0030E4F2206D6FBF00921B09 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0030E4FB206D6FBF00921B09 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0030E506206D6FBF00921B09 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,36 +252,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0030E4F9206D6FBF00921B09 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0030E502206D6FBF00921B09 /* timerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0030E504206D6FBF00921B09 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0030E50D206D6FBF00921B09 /* timerUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0030E4FF206D6FBF00921B09 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0030E4E8206D6FBF00921B09 /* countdown-timer-for-kids */;
-			targetProxy = 0030E4FE206D6FBF00921B09 /* PBXContainerItemProxy */;
-		};
-		0030E50A206D6FBF00921B09 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0030E4E8206D6FBF00921B09 /* countdown-timer-for-kids */;
-			targetProxy = 0030E509206D6FBF00921B09 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0030E4F0206D6FBF00921B09 /* Main.storyboard */ = {
@@ -573,72 +419,6 @@
 			};
 			name = Release;
 		};
-		0030E515206D6FBF00921B09 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3NYRYBXD9K;
-				INFOPLIST_FILE = timerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.katyaskvo.timerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/countdown-timer-for-kids.app/countdown-timer-for-kids";
-			};
-			name = Debug;
-		};
-		0030E516206D6FBF00921B09 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3NYRYBXD9K;
-				INFOPLIST_FILE = timerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.katyaskvo.timerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/countdown-timer-for-kids.app/countdown-timer-for-kids";
-			};
-			name = Release;
-		};
-		0030E518206D6FBF00921B09 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3NYRYBXD9K;
-				INFOPLIST_FILE = timerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.katyaskvo.timerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = timer;
-			};
-			name = Debug;
-		};
-		0030E519206D6FBF00921B09 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3NYRYBXD9K;
-				INFOPLIST_FILE = timerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.katyaskvo.timerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = timer;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -656,24 +436,6 @@
 			buildConfigurations = (
 				0030E512206D6FBF00921B09 /* Debug */,
 				0030E513206D6FBF00921B09 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0030E514206D6FBF00921B09 /* Build configuration list for PBXNativeTarget "countdown-timer-for-kidsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0030E515206D6FBF00921B09 /* Debug */,
-				0030E516206D6FBF00921B09 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0030E517206D6FBF00921B09 /* Build configuration list for PBXNativeTarget "countdown-timer-for-kidsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0030E518206D6FBF00921B09 /* Debug */,
-				0030E519206D6FBF00921B09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
