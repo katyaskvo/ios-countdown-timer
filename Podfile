@@ -5,11 +5,11 @@ workspace 'KidsTimer'
 target 'CountdownTimer' do
   use_frameworks!
 
-  pod 'CircleProgressBar', '~> 0.32', :inhibit_warnings => true
+  pod 'CircleProgressBar', :inhibit_warnings => true
 end
 
 def testing_pods
-    pod 'Quick'
+    pod 'Quick', :inhibit_warnings => true
     pod 'Nimble'
 end
 
