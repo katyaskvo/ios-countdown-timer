@@ -7,3 +7,8 @@ target 'CountdownTimer' do
 
   pod 'CircleProgressBar', '~> 0.32', :inhibit_warnings => true
 end
+
+def testing_pods
+    pod 'Quick'
+    pod 'Nimble'
+end
