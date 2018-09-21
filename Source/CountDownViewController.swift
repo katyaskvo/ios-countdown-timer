@@ -104,7 +104,7 @@ class CountDownViewController: UIViewController {
             self.audioPlayerAlarm.enableRate = true
             self.audioPlayerAlarm.rate = 1
             do {
-                try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+                try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default)
             }
             catch {
                 // report for an error
@@ -187,7 +187,7 @@ class CountDownViewController: UIViewController {
         self.audioPlayerTickTock.numberOfLoops = -1
         self.audioPlayerTickTock.enableRate = true
         do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default)
         }
         catch {
             // report for an error
