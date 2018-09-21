@@ -213,5 +213,3 @@ class CountDownViewController: UIViewController {
         UIApplication.shared.isIdleTimerDisabled = false //allow device to fall asleep, when timer is turnned off
     }
 }
-
-
