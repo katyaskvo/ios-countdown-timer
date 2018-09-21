@@ -16,7 +16,7 @@
 		0035B55420852911002D1671 /* tick-tock.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0035B55320852911002D1671 /* tick-tock.wav */; };
 		0051B661207F838200B56168 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0051B660207F838200B56168 /* RoundButton.swift */; };
 		00A39FA320741D270065A9B8 /* CountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A39FA220741D270065A9B8 /* CountDownViewController.swift */; };
-		4B8555C42155A47000BFB6CF /* UnitSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8555C32155A47000BFB6CF /* UnitSpecs.swift */; };
+		4B8555CC2155A7BA00BFB6CF /* ExampleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8555CB2155A7BA00BFB6CF /* ExampleSpec.swift */; };
 		51B5D6FBF6379CD5B7D2A6E6 /* Pods_CountdownTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208FAC36663BFF84EFDFB7D8 /* Pods_CountdownTimer.framework */; };
 		609CFD41B24E78750AFBCD60 /* libPods-UnitSpecs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9141880C74D0A502546C53D3 /* libPods-UnitSpecs.a */; };
 /* End PBXBuildFile section */
@@ -46,8 +46,8 @@
 		208FAC36663BFF84EFDFB7D8 /* Pods_CountdownTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CountdownTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		216F2DF7E1A353F5E4677769 /* Pods-UnitSpecs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitSpecs.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnitSpecs/Pods-UnitSpecs.release.xcconfig"; sourceTree = "<group>"; };
 		4B8555C12155A47000BFB6CF /* UnitSpecs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitSpecs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B8555C32155A47000BFB6CF /* UnitSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitSpecs.swift; sourceTree = "<group>"; };
 		4B8555C52155A47000BFB6CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B8555CB2155A7BA00BFB6CF /* ExampleSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSpec.swift; sourceTree = "<group>"; };
 		4BFB5AED21558E99006A7A04 /* Gemfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Gemfile; sourceTree = SOURCE_ROOT; };
 		4BFB5AEE21558E99006A7A04 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = SOURCE_ROOT; };
 		4BFB5AEF21558E99006A7A04 /* Gemfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile.lock; sourceTree = SOURCE_ROOT; };
@@ -129,8 +129,8 @@
 		4B8555C22155A47000BFB6CF /* UnitSpecs */ = {
 			isa = PBXGroup;
 			children = (
-				4B8555C32155A47000BFB6CF /* UnitSpecs.swift */,
 				4B8555C52155A47000BFB6CF /* Info.plist */,
+				4B8555CB2155A7BA00BFB6CF /* ExampleSpec.swift */,
 			);
 			path = UnitSpecs;
 			sourceTree = "<group>";
@@ -226,6 +226,7 @@
 					};
 					4B8555C02155A47000BFB6CF = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0030E4E8206D6FBF00921B09;
 					};
@@ -349,7 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B8555C42155A47000BFB6CF /* UnitSpecs.swift in Sources */,
+				4B8555CC2155A7BA00BFB6CF /* ExampleSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +534,7 @@
 			baseConfigurationReference = 7CA5D720CB721849B0C4FF45 /* Pods-UnitSpecs.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UnitSpecs/Info.plist;
@@ -541,6 +543,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.katyaskvo.UnitSpecs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CountdownTimer.app/CountdownTimer";
@@ -552,6 +555,7 @@
 			baseConfigurationReference = 216F2DF7E1A353F5E4677769 /* Pods-UnitSpecs.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UnitSpecs/Info.plist;
