@@ -10,12 +10,16 @@ class UITests: XCTestCase {
         oneMinuteTimer = app.buttons["1"]
     }
 
+    fileprivate func waitToDisappear(_ element: XCUIElement) {
+        let exists = NSPredicate(format: "exists != 1")
+        expectation(for: exists, evaluatedWith: element, handler: nil)
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+
     func testOneMinuteTimerWithImmediateClose() {
         oneMinuteTimer.tap()
 
-        let exists = NSPredicate(format: "exists != 1")
-        expectation(for: exists, evaluatedWith: oneMinuteTimer, handler: nil)
-        waitForExpectations(timeout: 5, handler: nil)
+        waitToDisappear(oneMinuteTimer)
 
         app.buttons["close button"].tap()
         XCTAssert(oneMinuteTimer.exists, "close should return to the list of timers")
