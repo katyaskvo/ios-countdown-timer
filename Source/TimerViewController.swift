@@ -51,7 +51,6 @@ class TimerViewController: UIViewController {
             destVC.numberOfSeconds = 60
             destVC.circleSize = 1 - 9 * circleDecrement
             destVC.circleColor = colorPurple
-            destVC.runTimer()
         }
         
         // 2 mins
@@ -59,7 +58,6 @@ class TimerViewController: UIViewController {
             destVC.numberOfSeconds = 120
             destVC.circleSize = 1 - 8 * circleDecrement
             destVC.circleColor = colorPurple
-            destVC.runTimer()
         }
         
         // 3 mins
@@ -67,7 +65,6 @@ class TimerViewController: UIViewController {
             destVC.numberOfSeconds = 180
             destVC.circleSize = 1 - 7 * circleDecrement
             destVC.circleColor = colorPink
-            destVC.runTimer()
         }
         
         // 4 mins
@@ -75,7 +72,6 @@ class TimerViewController: UIViewController {
             destVC.numberOfSeconds = 240
             destVC.circleSize = 1 - 6 * circleDecrement
             destVC.circleColor = colorPink
-            destVC.runTimer()
         }
         
         // 5 mins
@@ -83,7 +79,6 @@ class TimerViewController: UIViewController {
             destVC.numberOfSeconds = 300
             destVC.circleSize = 1 - 5 * circleDecrement
             destVC.circleColor = colorOrange
-            destVC.runTimer()
         }
 
         // 6 mins
@@ -91,7 +86,6 @@ class TimerViewController: UIViewController {
             destVC.numberOfSeconds = 360
             destVC.circleSize = 1 - 4 * circleDecrement
             destVC.circleColor = colorOrange
-            destVC.runTimer()
         }
         
         // 7 mins
@@ -99,7 +93,6 @@ class TimerViewController: UIViewController {
             destVC.numberOfSeconds = 420
             destVC.circleSize = 1 - 3 * circleDecrement
             destVC.circleColor = colorOrange
-            destVC.runTimer()
         }
         
         // 8 mins
@@ -107,7 +100,6 @@ class TimerViewController: UIViewController {
             destVC.numberOfSeconds = 480
             destVC.circleSize = 1 - 2 * circleDecrement
             destVC.circleColor = colorYellow
-            destVC.runTimer()
         }
         
         // 9 mins
@@ -115,7 +107,6 @@ class TimerViewController: UIViewController {
             destVC.numberOfSeconds = 540
             destVC.circleSize = 1 - circleDecrement
             destVC.circleColor = colorYellow
-            destVC.runTimer()
         }
         
         // 10 mins
@@ -123,7 +114,7 @@ class TimerViewController: UIViewController {
             destVC.numberOfSeconds = 600
             destVC.circleSize = 1
             destVC.circleColor = colorYellow
-            destVC.runTimer()
         }
+        destVC.runTimer()
     }
 }
