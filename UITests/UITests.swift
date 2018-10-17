@@ -7,7 +7,7 @@ class UITests: XCTestCase {
     override func setUp() {
         continueAfterFailure = false
         app.launch()
-        oneMinuteTimer = app.buttons["1"]
+        oneMinuteTimer = app.buttons["7"]
     }
 
     fileprivate func waitToDisappear(_ element: XCUIElement) {

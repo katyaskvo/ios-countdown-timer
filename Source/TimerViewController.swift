@@ -45,73 +45,66 @@ class TimerViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destVC : CountDownViewController = segue.destination as! CountDownViewController
         let circleDecrement: CGFloat = 0.07
-        
+        let tappedButton = sender as! RoundButton
+        let minutes = Int(tappedButton.title(for: .normal)!)!
+
+        destVC.numberOfSeconds = 60 * minutes
         // 1 min
         if (segue.identifier == "timer1min") {
-            destVC.numberOfSeconds = 60
             destVC.circleSize = 1 - 9 * circleDecrement
             destVC.circleColor = colorPurple
         }
         
         // 2 mins
         if (segue.identifier == "timer2mins") {
-            destVC.numberOfSeconds = 120
             destVC.circleSize = 1 - 8 * circleDecrement
             destVC.circleColor = colorPurple
         }
         
         // 3 mins
         if (segue.identifier == "timer3mins") {
-            destVC.numberOfSeconds = 180
             destVC.circleSize = 1 - 7 * circleDecrement
             destVC.circleColor = colorPink
         }
         
         // 4 mins
         if (segue.identifier == "timer4mins") {
-            destVC.numberOfSeconds = 240
             destVC.circleSize = 1 - 6 * circleDecrement
             destVC.circleColor = colorPink
         }
         
         // 5 mins
         if (segue.identifier == "timer5mins") {
-            destVC.numberOfSeconds = 300
             destVC.circleSize = 1 - 5 * circleDecrement
             destVC.circleColor = colorOrange
         }
 
         // 6 mins
         if (segue.identifier == "timer6mins") {
-            destVC.numberOfSeconds = 360
             destVC.circleSize = 1 - 4 * circleDecrement
             destVC.circleColor = colorOrange
         }
         
         // 7 mins
         if (segue.identifier == "timer7mins") {
-            destVC.numberOfSeconds = 420
             destVC.circleSize = 1 - 3 * circleDecrement
             destVC.circleColor = colorOrange
         }
         
         // 8 mins
         if (segue.identifier == "timer8mins") {
-            destVC.numberOfSeconds = 480
             destVC.circleSize = 1 - 2 * circleDecrement
             destVC.circleColor = colorYellow
         }
         
         // 9 mins
         if (segue.identifier == "timer9mins") {
-            destVC.numberOfSeconds = 540
             destVC.circleSize = 1 - circleDecrement
             destVC.circleColor = colorYellow
         }
         
         // 10 mins
         if (segue.identifier == "timer10mins") {
-            destVC.numberOfSeconds = 600
             destVC.circleSize = 1
             destVC.circleColor = colorYellow
         }
