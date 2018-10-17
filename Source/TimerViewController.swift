@@ -47,59 +47,11 @@ class TimerViewController: UIViewController {
         let circleDecrement: CGFloat = 0.07
         let tappedButton = sender as! RoundButton
         let minutes = Int(tappedButton.title(for: .normal)!)!
+        let color = tappedButton.backgroundColor!
 
         destVC.numberOfSeconds = 60 * minutes
         destVC.circleSize = 1 - (10 - CGFloat(minutes)) * circleDecrement
-        
-        // 1 min
-        if (segue.identifier == "timer1min") {
-            destVC.circleColor = colorPurple
-        }
-        
-        // 2 mins
-        if (segue.identifier == "timer2mins") {
-            destVC.circleColor = colorPurple
-        }
-        
-        // 3 mins
-        if (segue.identifier == "timer3mins") {
-            destVC.circleColor = colorPink
-        }
-        
-        // 4 mins
-        if (segue.identifier == "timer4mins") {
-            destVC.circleColor = colorPink
-        }
-        
-        // 5 mins
-        if (segue.identifier == "timer5mins") {
-            destVC.circleColor = colorOrange
-        }
-
-        // 6 mins
-        if (segue.identifier == "timer6mins") {
-            destVC.circleColor = colorOrange
-        }
-        
-        // 7 mins
-        if (segue.identifier == "timer7mins") {
-            destVC.circleColor = colorOrange
-        }
-        
-        // 8 mins
-        if (segue.identifier == "timer8mins") {
-            destVC.circleColor = colorYellow
-        }
-        
-        // 9 mins
-        if (segue.identifier == "timer9mins") {
-            destVC.circleColor = colorYellow
-        }
-        
-        // 10 mins
-        if (segue.identifier == "timer10mins") {
-            destVC.circleColor = colorYellow
-        }
+        destVC.circleColor = color
         destVC.runTimer()
     }
 }
