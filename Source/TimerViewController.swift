@@ -49,63 +49,55 @@ class TimerViewController: UIViewController {
         let minutes = Int(tappedButton.title(for: .normal)!)!
 
         destVC.numberOfSeconds = 60 * minutes
+        destVC.circleSize = 1 - (10 - CGFloat(minutes)) * circleDecrement
+        
         // 1 min
         if (segue.identifier == "timer1min") {
-            destVC.circleSize = 1 - 9 * circleDecrement
             destVC.circleColor = colorPurple
         }
         
         // 2 mins
         if (segue.identifier == "timer2mins") {
-            destVC.circleSize = 1 - 8 * circleDecrement
             destVC.circleColor = colorPurple
         }
         
         // 3 mins
         if (segue.identifier == "timer3mins") {
-            destVC.circleSize = 1 - 7 * circleDecrement
             destVC.circleColor = colorPink
         }
         
         // 4 mins
         if (segue.identifier == "timer4mins") {
-            destVC.circleSize = 1 - 6 * circleDecrement
             destVC.circleColor = colorPink
         }
         
         // 5 mins
         if (segue.identifier == "timer5mins") {
-            destVC.circleSize = 1 - 5 * circleDecrement
             destVC.circleColor = colorOrange
         }
 
         // 6 mins
         if (segue.identifier == "timer6mins") {
-            destVC.circleSize = 1 - 4 * circleDecrement
             destVC.circleColor = colorOrange
         }
         
         // 7 mins
         if (segue.identifier == "timer7mins") {
-            destVC.circleSize = 1 - 3 * circleDecrement
             destVC.circleColor = colorOrange
         }
         
         // 8 mins
         if (segue.identifier == "timer8mins") {
-            destVC.circleSize = 1 - 2 * circleDecrement
             destVC.circleColor = colorYellow
         }
         
         // 9 mins
         if (segue.identifier == "timer9mins") {
-            destVC.circleSize = 1 - circleDecrement
             destVC.circleColor = colorYellow
         }
         
         // 10 mins
         if (segue.identifier == "timer10mins") {
-            destVC.circleSize = 1
             destVC.circleColor = colorYellow
         }
         destVC.runTimer()
