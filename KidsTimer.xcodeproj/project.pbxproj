@@ -16,6 +16,7 @@
 		0035B55420852911002D1671 /* tick-tock.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0035B55320852911002D1671 /* tick-tock.wav */; };
 		0051B661207F838200B56168 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0051B660207F838200B56168 /* RoundButton.swift */; };
 		00A39FA320741D270065A9B8 /* CountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A39FA220741D270065A9B8 /* CountDownViewController.swift */; };
+		4B5D97D52177E3AA005D6D93 /* TimerViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5D97D42177E3AA005D6D93 /* TimerViewControllerSpec.swift */; };
 		4B8555CC2155A7BA00BFB6CF /* ExampleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8555CB2155A7BA00BFB6CF /* ExampleSpec.swift */; };
 		4B8555D42155AAF300BFB6CF /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8555D32155AAF300BFB6CF /* UITests.swift */; };
 		51B5D6FBF6379CD5B7D2A6E6 /* Pods_CountdownTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208FAC36663BFF84EFDFB7D8 /* Pods_CountdownTimer.framework */; };
@@ -55,6 +56,7 @@
 		1C33DFF3E0DE8B39FCB32945 /* libPods-UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		208FAC36663BFF84EFDFB7D8 /* Pods_CountdownTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CountdownTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		216F2DF7E1A353F5E4677769 /* Pods-UnitSpecs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitSpecs.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnitSpecs/Pods-UnitSpecs.release.xcconfig"; sourceTree = "<group>"; };
+		4B5D97D42177E3AA005D6D93 /* TimerViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewControllerSpec.swift; sourceTree = "<group>"; };
 		4B8555C12155A47000BFB6CF /* UnitSpecs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitSpecs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B8555C52155A47000BFB6CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B8555CB2155A7BA00BFB6CF /* ExampleSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSpec.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			children = (
 				4B8555C52155A47000BFB6CF /* Info.plist */,
 				4B8555CB2155A7BA00BFB6CF /* ExampleSpec.swift */,
+				4B5D97D42177E3AA005D6D93 /* TimerViewControllerSpec.swift */,
 			);
 			path = UnitSpecs;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B8555CC2155A7BA00BFB6CF /* ExampleSpec.swift in Sources */,
+				4B5D97D52177E3AA005D6D93 /* TimerViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
