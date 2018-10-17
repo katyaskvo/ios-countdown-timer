@@ -9,11 +9,20 @@
 import UIKit
 
 @IBDesignable
-class RoundButton: UIButton {
+public class RoundButton: UIButton {
 
-    @IBInspectable var cornerRadius: CGFloat = 0 {
-        didSet {
-            self.layer.cornerRadius = cornerRadius
-        }
+    fileprivate func makeButtonRound() {
+        self.layer.cornerRadius = bounds.width / 2
     }
+
+    override public func layoutSubviews() {
+        super.layoutSubviews()
+        makeButtonRound()
+    }
+
+    #if TARGET_INTERFACE_BUILDER
+    override public func prepareForInterfaceBuilder() {
+        makeButtonRound()
+    }
+    #endif
 }
