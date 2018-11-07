@@ -1,5 +1,5 @@
 language: swift
 osx_image: xcode10.1
-xcode_project: KidsTimer.xcodeproj
+xcode_workspace: KidsTimer.xcworkspace
 xcode_scheme: CountdownTimer
 xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone XR
