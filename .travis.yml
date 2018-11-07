@@ -1,0 +1,4 @@
+language: swift
+xcode_project: KidsTimer.xcodeproj
+xcode_scheme: CountdownTimer
+xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone XR
