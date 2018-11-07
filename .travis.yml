@@ -6,4 +6,4 @@ xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone XR
 git:
   depth: false
 install: skip
-after_success: bash <(curl -s 'https://codecov.io/bash') -Z -X gcov -X fix
+after_success: bash <(curl -s https://codecov.io/bash) -J 'CountdownTimer'
